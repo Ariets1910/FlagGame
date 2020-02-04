@@ -1,0 +1,34 @@
+.game {
+    background: darkslategrey;
+    width: 1fr;
+    height: auto;
+    text-align: center;
+
+}
+.game img {
+    width: 800px;
+    height: 600px;
+}
+.game button {
+    width: 240px;
+    height: auto;
+    color: black;
+    font-size: 48px;
+}
+.game h2 {
+    font-size: 48px;
+    color: darkslategrey;
+    margin: 10px;
+    padding: 10px;
+}
+
+.game h2:hover {
+    color: black;
+}
+.game h1 {
+    font-size: 64px;
+    margin: 10px;
+    margin-top: 0;
+    padding: 10px;
+}
+

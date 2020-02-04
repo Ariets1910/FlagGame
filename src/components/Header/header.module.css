@@ -1,0 +1,8 @@
+.header {
+    grid-column: 1 / -1;
+    background-color: darkblue;
+}
+.header h1 {
+    color: red;
+    text-align:  center;
+}

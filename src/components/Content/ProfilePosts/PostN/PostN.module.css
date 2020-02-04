@@ -1,0 +1,19 @@
+.postN div:nth-child(2) {
+    color: red;
+}
+.row img {
+    width: 120px;
+
+}
+.row {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+.postN button {
+    color: black;
+}
+.row textarea {
+    font-size: 24px;
+    color: black;
+}

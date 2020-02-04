@@ -1,0 +1,11 @@
+.navBlock {
+    color: white;
+    background-color: darkblue;
+    font-size: 24px;
+}
+.navBlock div:nth-child(3) {
+    color: greenyellow;
+}
+.navBlock div:nth-child(5) {
+    color: red;
+}
