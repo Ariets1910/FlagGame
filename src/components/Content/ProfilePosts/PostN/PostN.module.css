@@ -12,8 +12,12 @@
 }
 .postN button {
     color: black;
+    background-color: white;
 }
 .row textarea {
     font-size: 24px;
     color: black;
+}
+.postN {
+    background-color: #EAEBEF;
 }

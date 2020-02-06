@@ -1,0 +1,12 @@
+.message {
+    display: flex;
+    justify-content: start;
+
+}
+.message img {
+    border-radius: 40px;
+    width: 200px;
+}
+.message textarea p{
+    background-color: #F1EFF0;
+}

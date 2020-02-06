@@ -1,11 +1,26 @@
 .navBlock {
-    color: white;
-    background-color: darkblue;
-    font-size: 24px;
+    color: #242222;
+    font-size: 32px;
+    background-color: #EAEBEF;
 }
-.navBlock div:nth-child(3) {
-    color: greenyellow;
+
+.navBlock a {
+    text-decoration: none;
+    color: #242222;
 }
-.navBlock div:nth-child(5) {
-    color: red;
+
+.navBlock img {
+    width: 40px;
+    border-radius: 20px;
+}
+
+.item a {
+    display: flex;
+    align-items: center;
+}
+
+
+.item2 a {
+    display: flex;
+    align-items: center;
 }

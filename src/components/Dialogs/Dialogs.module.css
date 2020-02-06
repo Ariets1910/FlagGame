@@ -1,0 +1,6 @@
+.dialogs {
+    color: black;
+    grid-column: 2 / -1;
+    grid-row: 2;
+
+}

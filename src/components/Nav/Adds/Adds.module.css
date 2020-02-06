@@ -1,0 +1,9 @@
+.adds img {
+    width: 90px;
+    height: 200px;
+    border-radius: 40px;
+}
+.adds a {
+    display: flex;
+    align-items: center;
+}
