@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2caa071c65a7c1ba0bf1e5cb343b0a1",
+    "revision": "8a172ef5a2b4293710a18c5f48021135",
     "url": "/FlagGame/index.html"
   },
   {
-    "revision": "457b8e2e83484fbeb5d9",
-    "url": "/FlagGame/static/css/main.be45f2ae.chunk.css"
+    "revision": "26f5006eb6ff9aa9fd78",
+    "url": "/FlagGame/static/css/main.200e31d1.chunk.css"
   },
   {
     "revision": "8cf354e7e2516ed34c26",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FlagGame/static/js/2.e56a2afc.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "457b8e2e83484fbeb5d9",
-    "url": "/FlagGame/static/js/main.c1501cdb.chunk.js"
+    "revision": "26f5006eb6ff9aa9fd78",
+    "url": "/FlagGame/static/js/main.589542c2.chunk.js"
   },
   {
     "revision": "639feb3f60819f3a184d",
