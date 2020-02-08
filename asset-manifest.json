@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/FlagGame/static/css/main.200e31d1.chunk.css",
-    "main.js": "/FlagGame/static/js/main.3b2353c5.chunk.js",
-    "main.js.map": "/FlagGame/static/js/main.3b2353c5.chunk.js.map",
+    "main.js": "/FlagGame/static/js/main.38c10c1a.chunk.js",
+    "main.js.map": "/FlagGame/static/js/main.38c10c1a.chunk.js.map",
     "runtime-main.js": "/FlagGame/static/js/runtime-main.db43d3fe.js",
     "runtime-main.js.map": "/FlagGame/static/js/runtime-main.db43d3fe.js.map",
-    "static/js/2.e56a2afc.chunk.js": "/FlagGame/static/js/2.e56a2afc.chunk.js",
-    "static/js/2.e56a2afc.chunk.js.map": "/FlagGame/static/js/2.e56a2afc.chunk.js.map",
+    "static/js/2.f8fd8bc6.chunk.js": "/FlagGame/static/js/2.f8fd8bc6.chunk.js",
+    "static/js/2.f8fd8bc6.chunk.js.map": "/FlagGame/static/js/2.f8fd8bc6.chunk.js.map",
     "index.html": "/FlagGame/index.html",
-    "precache-manifest.5b0477e2a2d42dcd7a82cfd2688b9886.js": "/FlagGame/precache-manifest.5b0477e2a2d42dcd7a82cfd2688b9886.js",
+    "precache-manifest.c07f8a529547d2b41b5e8de3471f2150.js": "/FlagGame/precache-manifest.c07f8a529547d2b41b5e8de3471f2150.js",
     "service-worker.js": "/FlagGame/service-worker.js",
     "static/css/main.200e31d1.chunk.css.map": "/FlagGame/static/css/main.200e31d1.chunk.css.map",
-    "static/js/2.e56a2afc.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.e56a2afc.chunk.js.LICENSE.txt",
+    "static/js/2.f8fd8bc6.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.f8fd8bc6.chunk.js.LICENSE.txt",
     "static/media/Algeria.svg": "/FlagGame/static/media/Algeria.daeb5108.svg",
     "static/media/Angola.svg.png": "/FlagGame/static/media/Angola.svg.b2c27af1.png",
     "static/media/Argentina.svg.png": "/FlagGame/static/media/Argentina.svg.3e880c09.png",
@@ -65,8 +65,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.db43d3fe.js",
-    "static/js/2.e56a2afc.chunk.js",
+    "static/js/2.f8fd8bc6.chunk.js",
     "static/css/main.200e31d1.chunk.css",
-    "static/js/main.3b2353c5.chunk.js"
+    "static/js/main.38c10c1a.chunk.js"
   ]
 }
