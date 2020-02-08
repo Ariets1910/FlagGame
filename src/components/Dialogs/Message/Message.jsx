@@ -4,10 +4,16 @@ import classes from "./Message.module.css"
 
 const Message = (props) => {
     return (
-      <div className={classes.message}>
-          <img src={profilepic} alt="image"/>
-          <textarea name="" id="postMessage" cols="40" rows="10" >{props.message}</textarea>
-      </div>
+        <div className={classes.message}>
+            <div>
+                <img src={profilepic} alt="image"/>
+            </div>
+            <div className={classes.messageText}>
+                {props.message}
+            </div>
+
+
+        </div>
 
 
 

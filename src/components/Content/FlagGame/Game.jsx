@@ -54,20 +54,34 @@ import niue from "../../../images/flags/Niue.svg.png"
 import jamajka from "../../../images/flags/Jamaica.svg.png"
 import newcaledonia from "../../../images/flags/newkaledonia.svg.png"
 import bolivia from "../../../images/flags/Bolivia.svg.png"
+import uganda from "../../../images/flags/Uganda.svg.png"
+import fiji from "../../../images/flags/Fiji.svg.png"
+import hungary from "../../../images/flags/Hungary.svg.png"
+import wales from "../../../images/flags/Wales.svg.png"
+import saba from "../../../images/flags/Saba.svg.png"
+import rwanda from "../../../images/flags/Rwanda.svg.png"
+import vanuatu from "../../../images/flags/Vanuatu.svg.png"
+import pakistan from "../../../images/flags/Pakistan.svg.png"
+import peru from "../../../images/flags/Peru.svg.png"
+import niger from "../../../images/flags/Niger.svg.png"
+import irland from "../../../images/flags/Iceland.svg.png"
+import indonesia from "../../../images/flags/Indonesia.svg"
 
       let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
     china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
         iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
     mongolia, angola, belorus, cuba, vatican, greece, iran, libia, kazakhstan, ethiopia, greenland,
           madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
-          argentyna, niue, jamajka, newcaledonia, bolivia];
+          argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
+      vanuatu, pakistan, peru, niger, irland, indonesia];
 
     let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
         "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
         "Ісландія", "Єгипет", "Молдова", "Туніс", "Алжир", "Чилі", "ПАР", "Ємен", "Мароко", "Бразилія", "Румунія",
         "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
         "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
-        "Ніуе", "Ямайка", "Нова Каледонія", "Болівія"];
+        "Ніуе", "Ямайка", "Нова Каледонія", "Болівія", "Уганда", "Фіджі", "Угорщина", "Уельс", "Саба", "Руанда", "Вануату",
+        "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія"];
 
 let i =  (Math.floor(Math.random()*list.length));
     // alert (list.indexOf("Ефіопія"));
