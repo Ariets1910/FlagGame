@@ -20,6 +20,7 @@ const App = () => {
                 <div className="nav">
                     <Nav/>
                 </div>
+
                 <div className="content">
                     <Route path="/Profile" component={Content}/>
                     <Route path="/Dialogs" component={Message}/>

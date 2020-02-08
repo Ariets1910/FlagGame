@@ -2,11 +2,13 @@
     color: #242222;
     font-size: 32px;
     background-color: #EAEBEF;
+
 }
 
 .navBlock a {
     text-decoration: none;
     color: #242222;
+    padding-top: 20px;
 }
 
 .navBlock img {
@@ -23,4 +25,9 @@
 .item2 a {
     display: flex;
     align-items: center;
+}
+
+.navBlock a:hover {
+    color: red;
+
 }

@@ -53,20 +53,21 @@ import argentyna from "../../../images/flags/Argentina.svg.png"
 import niue from "../../../images/flags/Niue.svg.png"
 import jamajka from "../../../images/flags/Jamaica.svg.png"
 import newcaledonia from "../../../images/flags/newkaledonia.svg.png"
+import bolivia from "../../../images/flags/Bolivia.svg.png"
 
       let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
     china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
         iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
     mongolia, angola, belorus, cuba, vatican, greece, iran, libia, kazakhstan, ethiopia, greenland,
           madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
-          argentyna, niue, jamajka, newcaledonia];
+          argentyna, niue, jamajka, newcaledonia, bolivia];
 
     let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
         "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
         "Ісландія", "Єгипет", "Молдова", "Туніс", "Алжир", "Чилі", "ПАР", "Ємен", "Мароко", "Бразилія", "Румунія",
         "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
         "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
-        "Ніуе", "Ямайка", "Нова Каледонія"];
+        "Ніуе", "Ямайка", "Нова Каледонія", "Болівія"];
 
 let i =  (Math.floor(Math.random()*list.length));
     // alert (list.indexOf("Ефіопія"));
