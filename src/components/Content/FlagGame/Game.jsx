@@ -66,43 +66,60 @@ import peru from "../../../images/flags/Peru.svg.png"
 import niger from "../../../images/flags/Niger.svg.png"
 import irland from "../../../images/flags/Iceland.svg.png"
 import indonesia from "../../../images/flags/Indonesia.svg"
+import arrow from "../../../images/arrow-down-4-48.png"
 
-      let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
+let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
     china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
-        iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
+    iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
     mongolia, angola, belorus, cuba, vatican, greece, iran, libia, kazakhstan, ethiopia, greenland,
-          madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
-          argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
-      vanuatu, pakistan, peru, niger, irland, indonesia];
+    madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
+    argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
+    vanuatu, pakistan, peru, niger, irland, indonesia];
 
-    let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
-        "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
-        "Ісландія", "Єгипет", "Молдова", "Туніс", "Алжир", "Чилі", "ПАР", "Ємен", "Мароко", "Бразилія", "Румунія",
-        "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
-        "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
-        "Ніуе", "Ямайка", "Нова Каледонія", "Болівія", "Уганда", "Фіджі", "Угорщина", "Уельс", "Саба", "Руанда", "Вануату",
-        "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія"];
+let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
+    "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
+    "Ісландія", "Єгипет", "Молдова", "Туніс", "Алжир", "Чилі", "ПАР", "Ємен", "Мароко", "Бразилія", "Румунія",
+    "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
+    "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
+    "Ніуе", "Ямайка", "Нова Каледонія", "Болівія", "Уганда", "Фіджі", "Угорщина", "Уельс", "Саба", "Руанда", "Вануату",
+    "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія"];
 
-let i =  (Math.floor(Math.random()*list.length));
-    // alert (list.indexOf("Ефіопія"));
-    // alert (countries.length);
+let i = (Math.floor(Math.random() * list.length));
+// alert (list.indexOf("Ефіопія"));
+// alert (countries.length);
 const Game = (props) => {
     return (
         <div className={classes.game}>
             <div>
                 <h1>{props.question}</h1>
+                <div>
+                    <h3>
+                        Онови сторінку для наступного челенджу!!!
+                    </h3>
+                </div>
 
             </div>
+            <div>
                 <div>
                     <img className={classes.img} src={countries[i]} alt="flag"/>
-                    <h2>{list[i]}</h2>
                 </div>
-                {/*<div className={classes.game.button}>*/}
-                {/*    <button>США</button>*/}
-                {/*    <button>Росія</button>*/}
-                {/*    <button>Україна</button>*/}
-                {/*    <button>Мальта</button>*/}
-                {/*</div>*/}
+                <div className={classes.textBelow}>
+                    Наведи сюди мишку
+                    <div>
+                        <img src={arrow} alt="pidkazka"/>
+                    </div>
+
+
+                    <h2>{list[i]}</h2>
+
+                </div>
+            </div>
+            {/*<div className={classes.game.button}>*/}
+            {/*    <button>США</button>*/}
+            {/*    <button>Росія</button>*/}
+            {/*    <button>Україна</button>*/}
+            {/*    <button>Мальта</button>*/}
+            {/*</div>*/}
 
         </div>
 
