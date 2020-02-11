@@ -1,25 +1,32 @@
 import React from "react";
 import classes from "./Dialogs.module.css"
-import Message from "./Message/Message";
-import Answer from "./Answer/Answer";
+import MessageN from "./Message/MessageN";
+import UserN from "./UserN/UserN";
 
-const Dialogs = () => {
+const Dialogs = (props) => {
+
+    let userComponents = props.users.map((user) => <UserN name={user.name} id={user.id}/>);
+
+
+    let messageComponents = props.messages.map((message) => <MessageN message={message.message}/>);
+    console.log(messageComponents);
+
+
     return (
         <div className={classes.dialogs}>
-            <div>
-                <Message message='Вчора пішов я в ліс по гриби,
-Та ніц не знайшов серед зими,
-Поки шукав я так заблукав
-Чую як мій живіт заспівав
- Довго не думав, сів на пеньок,
-Дістав із кишені смачний пірожок
-Завтра до лісу знов по гриби,
-Тільки візьму вже два пироги'/>
+
+            <div className={classes.users}>
+                {userComponents}
+
+
             </div>
-            <div>
-                <Answer message='Круто!!!!!!!'/>
+            <div className={classes.messages}>
+                {messageComponents}
+
+
             </div>
         </div>
+
 
     )
 };

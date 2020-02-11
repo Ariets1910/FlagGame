@@ -3,11 +3,16 @@ import classes from "./Content.module.css"
 import Game from "./FlagGame/Game";
 import PostField from "./ProfilePosts/PostField";
 
-const Content = () => {
+
+const Content = (props) => {
+
+
     return (
         <div className={classes.content}>
-            <Game question="Яка це країна?"/>
-            <PostField/>
+
+            <Game question="Якв це країна?"/>
+            <PostField posts={props.posts}/>
+
         </div>
 
     )
