@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "51a9664c079ba6b11dda7fa6aa6d87ee",
+    "revision": "73af8417abb156a25f6c15d31555f359",
     "url": "/FlagGame/index.html"
   },
   {
-    "revision": "06baf90430fad0a4d264",
-    "url": "/FlagGame/static/css/main.dd789ba5.chunk.css"
+    "revision": "1db5e34b3893b391900b",
+    "url": "/FlagGame/static/css/main.12cf03fc.chunk.css"
   },
   {
-    "revision": "e4bc2b660f4f97100552",
-    "url": "/FlagGame/static/js/2.64683656.chunk.js"
+    "revision": "86a429baf94ecc4a2791",
+    "url": "/FlagGame/static/js/2.0ef98669.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/FlagGame/static/js/2.64683656.chunk.js.LICENSE.txt"
+    "url": "/FlagGame/static/js/2.0ef98669.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "06baf90430fad0a4d264",
-    "url": "/FlagGame/static/js/main.3361e617.chunk.js"
+    "revision": "1db5e34b3893b391900b",
+    "url": "/FlagGame/static/js/main.7be1854f.chunk.js"
   },
   {
     "revision": "639feb3f60819f3a184d",
@@ -102,10 +102,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d625a5aa05315f122cd675ceeabae17e",
     "url": "/FlagGame/static/media/Moldova.svg.d625a5aa.png"
-  },
-  {
-    "revision": "951e43e89e2f3fb602fa788b68e1725a",
-    "url": "/FlagGame/static/media/Natalia.951e43e8.jpg"
   },
   {
     "revision": "46ad54e7f2bab41570a0347158e7998b",
@@ -214,10 +210,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "17612250e6166377bdee6bc91ff40b72",
     "url": "/FlagGame/static/media/russia.17612250.svg"
-  },
-  {
-    "revision": "1aeecd60c245f84d7db8bd634f0e870b",
-    "url": "/FlagGame/static/media/ukraine.1aeecd60.svg"
   },
   {
     "revision": "aefba3fef673e14305b112b0e82805fe",

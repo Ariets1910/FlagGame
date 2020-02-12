@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FlagGame/static/css/main.dd789ba5.chunk.css",
-    "main.js": "/FlagGame/static/js/main.3361e617.chunk.js",
-    "main.js.map": "/FlagGame/static/js/main.3361e617.chunk.js.map",
+    "main.css": "/FlagGame/static/css/main.12cf03fc.chunk.css",
+    "main.js": "/FlagGame/static/js/main.7be1854f.chunk.js",
+    "main.js.map": "/FlagGame/static/js/main.7be1854f.chunk.js.map",
     "runtime-main.js": "/FlagGame/static/js/runtime-main.db43d3fe.js",
     "runtime-main.js.map": "/FlagGame/static/js/runtime-main.db43d3fe.js.map",
-    "static/js/2.64683656.chunk.js": "/FlagGame/static/js/2.64683656.chunk.js",
-    "static/js/2.64683656.chunk.js.map": "/FlagGame/static/js/2.64683656.chunk.js.map",
+    "static/js/2.0ef98669.chunk.js": "/FlagGame/static/js/2.0ef98669.chunk.js",
+    "static/js/2.0ef98669.chunk.js.map": "/FlagGame/static/js/2.0ef98669.chunk.js.map",
     "index.html": "/FlagGame/index.html",
-    "precache-manifest.028b71d7fb661743e71b38a1818098b8.js": "/FlagGame/precache-manifest.028b71d7fb661743e71b38a1818098b8.js",
+    "precache-manifest.70a013b0b0aa636e1c5ac1d22719056d.js": "/FlagGame/precache-manifest.70a013b0b0aa636e1c5ac1d22719056d.js",
     "service-worker.js": "/FlagGame/service-worker.js",
-    "static/css/main.dd789ba5.chunk.css.map": "/FlagGame/static/css/main.dd789ba5.chunk.css.map",
-    "static/js/2.64683656.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.64683656.chunk.js.LICENSE.txt",
+    "static/css/main.12cf03fc.chunk.css.map": "/FlagGame/static/css/main.12cf03fc.chunk.css.map",
+    "static/js/2.0ef98669.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.0ef98669.chunk.js.LICENSE.txt",
     "static/media/Algeria.svg": "/FlagGame/static/media/Algeria.daeb5108.svg",
     "static/media/Angola.svg.png": "/FlagGame/static/media/Angola.svg.b2c27af1.png",
     "static/media/Argentina.svg.png": "/FlagGame/static/media/Argentina.svg.3e880c09.png",
@@ -32,7 +32,6 @@
     "static/media/Kazakhstan.svg.png": "/FlagGame/static/media/Kazakhstan.svg.303df07b.png",
     "static/media/Kiselevovpad.jpg": "/FlagGame/static/media/Kiselevovpad.ea818b9b.jpg",
     "static/media/Moldova.svg.png": "/FlagGame/static/media/Moldova.svg.d625a5aa.png",
-    "static/media/Natalia.jpg": "/FlagGame/static/media/Natalia.951e43e8.jpg",
     "static/media/Nepal.svg.png": "/FlagGame/static/media/Nepal.svg.46ad54e7.png",
     "static/media/Niger.svg.png": "/FlagGame/static/media/Niger.svg.485ebc32.png",
     "static/media/Niue.svg.png": "/FlagGame/static/media/Niue.svg.80f81bcd.png",
@@ -60,13 +59,12 @@
     "static/media/newkaledonia.svg.png": "/FlagGame/static/media/newkaledonia.svg.178ac475.png",
     "static/media/profileimg.jpg": "/FlagGame/static/media/profileimg.292ce4ee.jpg",
     "static/media/russia.svg": "/FlagGame/static/media/russia.17612250.svg",
-    "static/media/ukraine.svg": "/FlagGame/static/media/ukraine.1aeecd60.svg",
     "static/media/usa.svg": "/FlagGame/static/media/usa.aefba3fe.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.db43d3fe.js",
-    "static/js/2.64683656.chunk.js",
-    "static/css/main.dd789ba5.chunk.css",
-    "static/js/main.3361e617.chunk.js"
+    "static/js/2.0ef98669.chunk.js",
+    "static/css/main.12cf03fc.chunk.css",
+    "static/js/main.7be1854f.chunk.js"
   ]
 }
