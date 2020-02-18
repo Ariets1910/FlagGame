@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Content.module.css"
-import Game from "./FlagGame/Game";
 import PostField from "./ProfilePosts/PostField";
+import Game from "./FlagGame/Game";
 
 
 const Content = (props) => {

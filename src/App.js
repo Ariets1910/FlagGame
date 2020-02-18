@@ -9,12 +9,14 @@ import {BrowserRouter, HashRouter, Route} from "react-router-dom";
 import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
+import MyFriends from "./components/Nav/MyFriends/MyFriends";
 
 
 const App = (props) => {
 
     return (
         <HashRouter>
+
             <div className="grid">
                 <div className="header">
                     <Header/>
@@ -24,11 +26,14 @@ const App = (props) => {
                 </div>
 
                 <div className="content">
-                    <Route path="/Profile" render={() => <Content posts={props.posts}/>}/>
-                    <Route path="/Dialogs" render={() => <Dialogs users={props.users} messages={props.messages}/>}/>
+                    <Route path="/Profile" render={() => <Content posts={props.state.posts}/>}/>
+                    <Route path="/Dialogs" render={() => <Dialogs users={props.state.users} messages={props.state.messages}/>}/>
                     <Route path="/News" component={News}/>
                     <Route path="/Music" component={Music}/>
+                    <Route path="/MyFriends" render={() => <MyFriends myFriends={props.state.myFriends}/>}/>
+                    {/*<Route path="/MyFriends" component={MyFriends}/>*/}
                     <Route path="/Settings" component={Settings}/>
+
                 </div>
                 <div className="footer">
                     <Footer/>

@@ -1,6 +1,6 @@
 import React from 'react';
 import classes from "./Game.module.css"
-import ukraine from "../../../images/flags/ukraine.svg"
+import ukraine from "../../../images/flags/Uganda.svg.png"
 import usa from "../../../images/flags/usa.svg"
 import russia from "../../../images/flags/russia.svg"
 import england from "../../../images/flags/england.svg.png"
@@ -91,7 +91,7 @@ const Game = (props) => {
     return (
         <div className={classes.game}>
             <div>
-                <h1>{props.question}</h1>
+                <h1>Яка це країна?</h1>
                 <div>
                     <h3>
                         Онови сторінку для наступного челенджу!!!

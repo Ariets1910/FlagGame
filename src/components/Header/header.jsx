@@ -3,8 +3,10 @@ import classes from "./header.module.css"
 import logo from "../../images/logo.png"
 
 const Header = () => {
+
     return (
         <div className={classes.header}>
+
             <div>
                 <img src={logo} alt=""/>
             </div>

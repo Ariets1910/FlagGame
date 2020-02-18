@@ -6,6 +6,7 @@ import kiselov from "../../images/Kiselevovpad.jpg"
 import music from "../../images/music.png"
 import settings from "../../images/graysettings.png"
 import Adds from "./Adds/Adds";
+import myFriends from "../../images/friends-animated-logoe.gif"
 import {NavLink} from "react-router-dom";
 
 
@@ -24,6 +25,9 @@ const Nav = () => {
             </div>
             <div className={classes.item}>
                 <NavLink to="Music" activeClassName={classes.active}><img src={music} alt=""/> Music</NavLink>
+            </div>
+            <div className={classes.item}>
+                <NavLink to="MyFriends" activeClassName={classes.active}> <img src={myFriends} alt=""/>MyFriends</NavLink>
             </div>
             <div className={classes.item}>
                 <NavLink to="Settings" activeClassName={classes.active}> <img src={settings} alt=""/>Settings</NavLink>

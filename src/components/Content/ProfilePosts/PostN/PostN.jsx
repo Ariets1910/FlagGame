@@ -6,8 +6,11 @@ const PostN = (props) => {
         <div className={classes.postN}>
             <div>
                 <div className={classes.row}>
+
                     <img src={avatar} alt="image"/>
-                    <textarea name="" id="postMessage" cols="auto" rows="auto" >{props.message}</textarea>
+                    <textarea name="" id="postMessage" cols="auto" rows="auto" >{
+
+                        props.message}</textarea>
                 </div>
                 <div>
                     <button className={classes.postN}>Like!!</button>

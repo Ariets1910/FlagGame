@@ -1,0 +1,21 @@
+.friendN {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+
+}
+.friendN img {
+    width: 60px;
+    border-radius: 20px;
+
+}
+.friendN a {
+    text-decoration: none;
+    color: black;
+}
+
+.friendN a:hover {
+    color: red;
+}
+
+

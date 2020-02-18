@@ -1,11 +1,18 @@
 
 
 .userN {
+    display: flex;
+    align-items: center;
     padding: 20px;
 
 }
+.userN img {
+    width: 60px;
+    border-radius: 20px;
+
+}
 .userN a {
-    color: gold;
+
 }
 
 
