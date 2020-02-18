@@ -8,7 +8,7 @@ import Sveta from "../images/sveta.jpg"
 let state = {
     users: [
         {id: 1, path: Natalia, name: "Natalia"},
-        {id: 2, path: Genias, name: "Genias"},
+        {id: 2, path: Genias, name: "Natalia"},
         {id: 3, path: Igor, name: "Igor"},
         {id: 4, path: Andriy, name: "Andriy"},
         {id: 5, path: Michael, name: "Michael"},

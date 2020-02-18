@@ -18,6 +18,7 @@ const App = (props) => {
         <HashRouter>
 
             <div className="grid">
+
                 <div className="header">
                     <Header/>
                 </div>
