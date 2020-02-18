@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73af8417abb156a25f6c15d31555f359",
+    "revision": "7301a7ccffc53e02a9d42ac4934f16bb",
     "url": "/FlagGame/index.html"
   },
   {
-    "revision": "1db5e34b3893b391900b",
-    "url": "/FlagGame/static/css/main.12cf03fc.chunk.css"
+    "revision": "a6fe3fa5d30c58299e40",
+    "url": "/FlagGame/static/css/main.706244c0.chunk.css"
   },
   {
-    "revision": "86a429baf94ecc4a2791",
-    "url": "/FlagGame/static/js/2.0ef98669.chunk.js"
+    "revision": "8ea3a2e3ab72ede71ffe",
+    "url": "/FlagGame/static/js/2.55abcaad.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/FlagGame/static/js/2.0ef98669.chunk.js.LICENSE.txt"
+    "url": "/FlagGame/static/js/2.55abcaad.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1db5e34b3893b391900b",
-    "url": "/FlagGame/static/js/main.7be1854f.chunk.js"
+    "revision": "a6fe3fa5d30c58299e40",
+    "url": "/FlagGame/static/js/main.8d8ddf8a.chunk.js"
   },
   {
     "revision": "639feb3f60819f3a184d",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "daeb5108dcabc9e00e731ee40e546b40",
     "url": "/FlagGame/static/media/Algeria.daeb5108.svg"
+  },
+  {
+    "revision": "3cf2384a4b48706f09a1dd306cc6dcc1",
+    "url": "/FlagGame/static/media/Andriy.3cf2384a.jpg"
   },
   {
     "revision": "b2c27af1f73d31f5215767ec5a7db833",
@@ -76,8 +80,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FlagGame/static/media/Fiji.svg.259e7300.png"
   },
   {
+    "revision": "9c0615f8bda7e712af445d32544d83f2",
+    "url": "/FlagGame/static/media/Genyas.9c0615f8.jpg"
+  },
+  {
     "revision": "ba0d527792ca7f399aff67afdb331e84",
     "url": "/FlagGame/static/media/Germany.svg.ba0d5277.webp"
+  },
+  {
+    "revision": "478b6bc03c581015b13954ea1a1af399",
+    "url": "/FlagGame/static/media/Igor.478b6bc0.jpg"
   },
   {
     "revision": "e9b657b839dba5a312c5ea243cf43c3d",
@@ -102,6 +114,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d625a5aa05315f122cd675ceeabae17e",
     "url": "/FlagGame/static/media/Moldova.svg.d625a5aa.png"
+  },
+  {
+    "revision": "951e43e89e2f3fb602fa788b68e1725a",
+    "url": "/FlagGame/static/media/Natalia.951e43e8.jpg"
   },
   {
     "revision": "46ad54e7f2bab41570a0347158e7998b",
@@ -134,6 +150,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "b9e8b6237d11696882f0d075f85aed57",
     "url": "/FlagGame/static/media/Portugal.svg.b9e8b623.png"
+  },
+  {
+    "revision": "c041b2254ffbf45b0f13e53814e04df4",
+    "url": "/FlagGame/static/media/Roma.c041b225.jpg"
   },
   {
     "revision": "0f2cf1ff297354e89c443d736971fd5d",
@@ -184,6 +204,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FlagGame/static/media/dollar-logo-png.4764fd67.jpg"
   },
   {
+    "revision": "6b1994b53e75f8be12c9a744b52993e7",
+    "url": "/FlagGame/static/media/friends-animated-logoe.6b1994b5.gif"
+  },
+  {
     "revision": "f0476a92cb218fdaeae95a2b51e52135",
     "url": "/FlagGame/static/media/koronavirus.f0476a92.jpg"
   },
@@ -210,6 +234,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "17612250e6166377bdee6bc91ff40b72",
     "url": "/FlagGame/static/media/russia.17612250.svg"
+  },
+  {
+    "revision": "0a074138ac970be759106c46fcddb0e0",
+    "url": "/FlagGame/static/media/sveta.0a074138.jpg"
   },
   {
     "revision": "aefba3fef673e14305b112b0e82805fe",
