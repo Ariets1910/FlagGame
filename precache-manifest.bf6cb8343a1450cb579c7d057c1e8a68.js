@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7301a7ccffc53e02a9d42ac4934f16bb",
+    "revision": "91d2d80e1bc69e7732b1226eff051d5d",
     "url": "/FlagGame/index.html"
   },
   {
-    "revision": "a6fe3fa5d30c58299e40",
-    "url": "/FlagGame/static/css/main.706244c0.chunk.css"
+    "revision": "b08a2721b378c5f2033f",
+    "url": "/FlagGame/static/css/main.4c5415f5.chunk.css"
   },
   {
-    "revision": "8ea3a2e3ab72ede71ffe",
-    "url": "/FlagGame/static/js/2.55abcaad.chunk.js"
+    "revision": "a97ad2858aa303453a68",
+    "url": "/FlagGame/static/js/2.691e2c0f.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/FlagGame/static/js/2.55abcaad.chunk.js.LICENSE.txt"
+    "url": "/FlagGame/static/js/2.691e2c0f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a6fe3fa5d30c58299e40",
-    "url": "/FlagGame/static/js/main.8d8ddf8a.chunk.js"
+    "revision": "b08a2721b378c5f2033f",
+    "url": "/FlagGame/static/js/main.a6158c82.chunk.js"
   },
   {
     "revision": "639feb3f60819f3a184d",
@@ -78,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "259e73008e6752adeb699d9fd62fb3e7",
     "url": "/FlagGame/static/media/Fiji.svg.259e7300.png"
+  },
+  {
+    "revision": "b7ac0af090affb382f2d53eaef63fefd",
+    "url": "/FlagGame/static/media/FlagGameLogo.b7ac0af0.jfif"
   },
   {
     "revision": "9c0615f8bda7e712af445d32544d83f2",
@@ -198,6 +202,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "412915369f896b6c5fa3c7652137abc5",
     "url": "/FlagGame/static/media/avatar.41291536.jpg"
+  },
+  {
+    "revision": "c6d1589b318232d346617bb1c7519f8f",
+    "url": "/FlagGame/static/media/background3.c6d1589b.jpg"
   },
   {
     "revision": "4764fd6748c663e2a2f2c783a7fcc9c7",

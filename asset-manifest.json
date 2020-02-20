@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FlagGame/static/css/main.706244c0.chunk.css",
-    "main.js": "/FlagGame/static/js/main.8d8ddf8a.chunk.js",
-    "main.js.map": "/FlagGame/static/js/main.8d8ddf8a.chunk.js.map",
+    "main.css": "/FlagGame/static/css/main.4c5415f5.chunk.css",
+    "main.js": "/FlagGame/static/js/main.a6158c82.chunk.js",
+    "main.js.map": "/FlagGame/static/js/main.a6158c82.chunk.js.map",
     "runtime-main.js": "/FlagGame/static/js/runtime-main.db43d3fe.js",
     "runtime-main.js.map": "/FlagGame/static/js/runtime-main.db43d3fe.js.map",
-    "static/js/2.55abcaad.chunk.js": "/FlagGame/static/js/2.55abcaad.chunk.js",
-    "static/js/2.55abcaad.chunk.js.map": "/FlagGame/static/js/2.55abcaad.chunk.js.map",
+    "static/js/2.691e2c0f.chunk.js": "/FlagGame/static/js/2.691e2c0f.chunk.js",
+    "static/js/2.691e2c0f.chunk.js.map": "/FlagGame/static/js/2.691e2c0f.chunk.js.map",
     "index.html": "/FlagGame/index.html",
-    "precache-manifest.c3a13bd345b69ecd5ee377a86d3e963f.js": "/FlagGame/precache-manifest.c3a13bd345b69ecd5ee377a86d3e963f.js",
+    "precache-manifest.bf6cb8343a1450cb579c7d057c1e8a68.js": "/FlagGame/precache-manifest.bf6cb8343a1450cb579c7d057c1e8a68.js",
     "service-worker.js": "/FlagGame/service-worker.js",
-    "static/css/main.706244c0.chunk.css.map": "/FlagGame/static/css/main.706244c0.chunk.css.map",
-    "static/js/2.55abcaad.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.55abcaad.chunk.js.LICENSE.txt",
+    "static/css/main.4c5415f5.chunk.css.map": "/FlagGame/static/css/main.4c5415f5.chunk.css.map",
+    "static/js/2.691e2c0f.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.691e2c0f.chunk.js.LICENSE.txt",
     "static/media/Algeria.svg": "/FlagGame/static/media/Algeria.daeb5108.svg",
     "static/media/Andriy.jpg": "/FlagGame/static/media/Andriy.3cf2384a.jpg",
     "static/media/Angola.svg.png": "/FlagGame/static/media/Angola.svg.b2c27af1.png",
@@ -26,6 +26,7 @@
     "static/media/Egypt.svg.png": "/FlagGame/static/media/Egypt.svg.35ccd81c.png",
     "static/media/Ethiopia.svg.png": "/FlagGame/static/media/Ethiopia.svg.b6787286.png",
     "static/media/Fiji.svg.png": "/FlagGame/static/media/Fiji.svg.259e7300.png",
+    "static/media/FlagGameLogo.jfif": "/FlagGame/static/media/FlagGameLogo.b7ac0af0.jfif",
     "static/media/Genyas.jpg": "/FlagGame/static/media/Genyas.9c0615f8.jpg",
     "static/media/Germany.svg.webp": "/FlagGame/static/media/Germany.svg.ba0d5277.webp",
     "static/media/Igor.jpg": "/FlagGame/static/media/Igor.478b6bc0.jpg",
@@ -56,6 +57,7 @@
     "static/media/Vatican.svg.png": "/FlagGame/static/media/Vatican.svg.ae95f931.png",
     "static/media/Wales.svg.png": "/FlagGame/static/media/Wales.svg.a7aa1c88.png",
     "static/media/avatar.jpg": "/FlagGame/static/media/avatar.41291536.jpg",
+    "static/media/background3.jpg": "/FlagGame/static/media/background3.c6d1589b.jpg",
     "static/media/dollar-logo-png.jpg": "/FlagGame/static/media/dollar-logo-png.4764fd67.jpg",
     "static/media/friends-animated-logoe.gif": "/FlagGame/static/media/friends-animated-logoe.6b1994b5.gif",
     "static/media/koronavirus.jpg": "/FlagGame/static/media/koronavirus.f0476a92.jpg",
@@ -70,8 +72,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.db43d3fe.js",
-    "static/js/2.55abcaad.chunk.js",
-    "static/css/main.706244c0.chunk.css",
-    "static/js/main.8d8ddf8a.chunk.js"
+    "static/js/2.691e2c0f.chunk.js",
+    "static/css/main.4c5415f5.chunk.css",
+    "static/js/main.a6158c82.chunk.js"
   ]
 }
