@@ -1,2 +1,25 @@
+.form {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 100px minmax(100px, 200px);
+    grid-template-rows: minmax(50px, auto) 50px;
+}
 
+.textarea {
+    grid-column: 1 / -1;
+}
+.textarea textarea {
+
+}
+
+
+.addButton {
+
+    grid-row: 2;
+}
+
+.clearButton {
+
+    grid-row: 2 / -1;
+}
 

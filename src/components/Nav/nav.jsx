@@ -8,11 +8,17 @@ import settings from "../../images/graysettings.png"
 import Adds from "./Adds/Adds";
 import myFriends from "../../images/friends-animated-logoe.gif"
 import {NavLink} from "react-router-dom";
+import flagGameLogo from "../../images/flags/FlagGameLogo.jfif"
+
+
 
 
 const Nav = () => {
     return (
         <div className={classes.navBlock}>
+            <div className={classes.item}>
+                <NavLink to="FlagGame" activeClassName={classes.active}><img src={flagGameLogo} alt=""/>Назови прапор</NavLink>
+            </div>
             <div className={classes.item}>
                 <NavLink to="Profile" activeClassName={classes.active}><img src={profilelogo} alt=""/>Profile</NavLink>
             </div>

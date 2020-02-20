@@ -5,6 +5,8 @@ import Andriy from "../images/Andriy.jpg"
 import Genias from "../images/Genyas.jpg"
 import Roma from "../images/Roma.jpg"
 import Sveta from "../images/sveta.jpg"
+import {rerenderEntireTree} from "../render";
+
 let state = {
     users: [
         {id: 1, path: Natalia, name: "Natalia"},
@@ -23,12 +25,14 @@ let state = {
         {id: 5, message: "Nice to hear that!!!"},
         {id: 6, message: "I love react!!"},
     ],
+    messageFieldStartValue:  "Add some message",
     posts: [
         {id: 1, message: "Hello! This is my second project!!!", likeCount: "10"},
         {id: 2, message: "It is great!!!", likeCount: "-1"},
         {id: 3, message: "Thank you! Enjoy!", likeCount: "20"},
         {id: 4, message: "With pleasure", likeCount: "100"},
     ],
+    postFieldStartValue:  "Add some text",
     myFriends: [
         {id: 1, path: Natalia, name: "Natalia"},
         {id: 2, path: Genias, name: "Genias"},
@@ -40,14 +44,37 @@ let state = {
     ],
 };
 
-// let addPost = (postMessage) => {
-//     let newPost = {
-//         id: 5,
-//         message: postMessage,
-//         likeCount: 0
-//     }
-// }
+    window.state = state;
 
+export let addPost = (postMessage) => {
+
+    let newPost = {
+        id: state.posts.length + 1,
+        message: postMessage,
+        likeCount: 0
+    };
+    state.posts.push(newPost);
+    rerenderEntireTree(state);
+};
+export let updateText = (newText) => {
+
+    state.postFieldStartValue = newText;
+    rerenderEntireTree(state);
+};
+
+export let addNewMessage = (dialogsMessage) => {
+    let newDialogsMessage = {
+        id: state.messages.length + 1,
+        message: dialogsMessage,
+
+    };
+    state.messages.push(newDialogsMessage);
+    rerenderEntireTree(state);
+};
+export let updateMessage = (newMessage) => {
+    state.messageFieldStartValue = newMessage;
+    rerenderEntireTree(state);
+};
 
 export default state
 
