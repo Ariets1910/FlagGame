@@ -67,6 +67,19 @@ import niger from "../../../images/flags/Niger.svg.png"
 import irland from "../../../images/flags/Iceland.svg.png"
 import indonesia from "../../../images/flags/Indonesia.svg"
 import arrow from "../../../images/arrow-down-4-48.png"
+import australia from "../../../images/flags/Australia.svg.png"
+import azerbajdzan from "../../../images/flags/Azerbaijan.svg.png"
+import albania from "../../../images/flags/Albania.svg.png"
+import belgium from "../../../images/flags/Belgium.svg.png"
+import benin from "../../../images/flags/Benin.svg.png"
+import estonia from "../../../images/flags/Estonia.svg.png"
+import zimbabwe from "../../../images/flags/Zimbabwe.svg.png"
+import india from "../../../images/flags/India.svg.png"
+import myanmar from "../../../images/flags/Myanmar.png"
+import luxembourg from "../../../images/flags/Luxembourg.svg.png"
+import singapur from "../../../images/flags/Singapore.svg.png"
+
+
 
 let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
     china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
@@ -74,7 +87,8 @@ let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
     mongolia, angola, belorus, cuba, vatican, greece, iran, libia, kazakhstan, ethiopia, greenland,
     madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
     argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
-    vanuatu, pakistan, peru, niger, irland, indonesia];
+    vanuatu, pakistan, peru, niger, irland, indonesia, australia, azerbajdzan, albania, belgium, benin,
+    estonia, zimbabwe, india, myanmar, luxembourg, singapur];
 
 let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
     "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
@@ -82,9 +96,13 @@ let list = ["США", "Росія", "Україна", "Англія", "Німе�
     "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
     "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
     "Ніуе", "Ямайка", "Нова Каледонія", "Болівія", "Уганда", "Фіджі", "Угорщина", "Уельс", "Саба", "Руанда", "Вануату",
-    "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія"];
+    "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія", "Австралія", "Азербайжан", "Албанія", "Бельгія", "Бенін", "Венесуела"
+    , "Естонія", "Зімбабве", "Індія", "Мьянма", "Люксембург", "Сингапур"];
+
 
 let i = (Math.floor(Math.random() * list.length));
+
+// alert (list.length);
 // alert (list.indexOf("Ефіопія"));
 // alert (countries.length);
 const Game = (props) => {
@@ -94,6 +112,7 @@ const Game = (props) => {
                 <h1>Яка це країна?</h1>
                 <div>
                     <h3>
+
                         Онови сторінку для наступного челенджу!!!
                     </h3>
                 </div>
