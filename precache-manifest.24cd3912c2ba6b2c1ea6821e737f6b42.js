@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "91d2d80e1bc69e7732b1226eff051d5d",
+    "revision": "cc63e5d7d2455973f4f0f83b4cea05c2",
     "url": "/FlagGame/index.html"
   },
   {
-    "revision": "b08a2721b378c5f2033f",
+    "revision": "275c0eafd749cd21906b",
     "url": "/FlagGame/static/css/main.4c5415f5.chunk.css"
   },
   {
-    "revision": "a97ad2858aa303453a68",
-    "url": "/FlagGame/static/js/2.691e2c0f.chunk.js"
+    "revision": "0d37875cb1ff0b2ae860",
+    "url": "/FlagGame/static/js/2.b96e64f7.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/FlagGame/static/js/2.691e2c0f.chunk.js.LICENSE.txt"
+    "url": "/FlagGame/static/js/2.b96e64f7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b08a2721b378c5f2033f",
-    "url": "/FlagGame/static/js/main.a6158c82.chunk.js"
+    "revision": "275c0eafd749cd21906b",
+    "url": "/FlagGame/static/js/main.e7b53016.chunk.js"
   },
   {
     "revision": "639feb3f60819f3a184d",
     "url": "/FlagGame/static/js/runtime-main.db43d3fe.js"
+  },
+  {
+    "revision": "74401241879f97b375903f259af79648",
+    "url": "/FlagGame/static/media/Albania.svg.74401241.png"
   },
   {
     "revision": "daeb5108dcabc9e00e731ee40e546b40",
@@ -38,6 +42,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3e880c0908c4d0b84a3ed1c5d592155f",
     "url": "/FlagGame/static/media/Argentina.svg.3e880c09.png"
+  },
+  {
+    "revision": "02c660b9f731d93d6e76af4248b745bf",
+    "url": "/FlagGame/static/media/Australia.svg.02c660b9.png"
+  },
+  {
+    "revision": "3081b19ab454c70ab95c43075e75e950",
+    "url": "/FlagGame/static/media/Azerbaijan.svg.3081b19a.png"
   },
   {
     "revision": "5987ad8946470c03df345ff26d8447ae",
@@ -96,6 +108,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FlagGame/static/media/Igor.478b6bc0.jpg"
   },
   {
+    "revision": "44ecd9254f53f3bada18617b50edcc4f",
+    "url": "/FlagGame/static/media/India.svg.44ecd925.png"
+  },
+  {
     "revision": "e9b657b839dba5a312c5ea243cf43c3d",
     "url": "/FlagGame/static/media/Indonesia.e9b657b8.svg"
   },
@@ -118,6 +134,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "d625a5aa05315f122cd675ceeabae17e",
     "url": "/FlagGame/static/media/Moldova.svg.d625a5aa.png"
+  },
+  {
+    "revision": "40cd8d4e6ebcea4cacf511abce1cdbde",
+    "url": "/FlagGame/static/media/Myanmar.40cd8d4e.png"
   },
   {
     "revision": "951e43e89e2f3fb602fa788b68e1725a",
@@ -168,6 +188,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FlagGame/static/media/Saba.svg.cc037991.png"
   },
   {
+    "revision": "df2df945f58a81f24cbe7540f9727f57",
+    "url": "/FlagGame/static/media/Singapore.svg.df2df945.png"
+  },
+  {
     "revision": "b62df313096b2d0205e937926db159a5",
     "url": "/FlagGame/static/media/SouthKorea.b62df313.svg"
   },
@@ -198,6 +222,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a7aa1c88fbadab1c2c629fc67e396d2a",
     "url": "/FlagGame/static/media/Wales.svg.a7aa1c88.png"
+  },
+  {
+    "revision": "c4f006b9262cfdda169bec6327f04089",
+    "url": "/FlagGame/static/media/Zimbabwe.svg.c4f006b9.png"
   },
   {
     "revision": "412915369f896b6c5fa3c7652137abc5",
