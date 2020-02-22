@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/FlagGame/static/css/main.4c5415f5.chunk.css",
-    "main.js": "/FlagGame/static/js/main.e7b53016.chunk.js",
-    "main.js.map": "/FlagGame/static/js/main.e7b53016.chunk.js.map",
+    "main.js": "/FlagGame/static/js/main.c201d9fa.chunk.js",
+    "main.js.map": "/FlagGame/static/js/main.c201d9fa.chunk.js.map",
     "runtime-main.js": "/FlagGame/static/js/runtime-main.db43d3fe.js",
     "runtime-main.js.map": "/FlagGame/static/js/runtime-main.db43d3fe.js.map",
-    "static/js/2.b96e64f7.chunk.js": "/FlagGame/static/js/2.b96e64f7.chunk.js",
-    "static/js/2.b96e64f7.chunk.js.map": "/FlagGame/static/js/2.b96e64f7.chunk.js.map",
+    "static/js/2.19e63d5b.chunk.js": "/FlagGame/static/js/2.19e63d5b.chunk.js",
+    "static/js/2.19e63d5b.chunk.js.map": "/FlagGame/static/js/2.19e63d5b.chunk.js.map",
     "index.html": "/FlagGame/index.html",
-    "precache-manifest.24cd3912c2ba6b2c1ea6821e737f6b42.js": "/FlagGame/precache-manifest.24cd3912c2ba6b2c1ea6821e737f6b42.js",
+    "precache-manifest.e37f0ada4975358d2317805273885436.js": "/FlagGame/precache-manifest.e37f0ada4975358d2317805273885436.js",
     "service-worker.js": "/FlagGame/service-worker.js",
     "static/css/main.4c5415f5.chunk.css.map": "/FlagGame/static/css/main.4c5415f5.chunk.css.map",
-    "static/js/2.b96e64f7.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.b96e64f7.chunk.js.LICENSE.txt",
+    "static/js/2.19e63d5b.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.19e63d5b.chunk.js.LICENSE.txt",
     "static/media/Albania.svg.png": "/FlagGame/static/media/Albania.svg.74401241.png",
     "static/media/Algeria.svg": "/FlagGame/static/media/Algeria.daeb5108.svg",
     "static/media/Andriy.jpg": "/FlagGame/static/media/Andriy.3cf2384a.jpg",
@@ -61,6 +61,7 @@
     "static/media/Uganda.svg.png": "/FlagGame/static/media/Uganda.svg.85ff41a6.png",
     "static/media/Vanuatu.svg.png": "/FlagGame/static/media/Vanuatu.svg.e6d031f4.png",
     "static/media/Vatican.svg.png": "/FlagGame/static/media/Vatican.svg.ae95f931.png",
+    "static/media/Venezuela.svg.png": "/FlagGame/static/media/Venezuela.svg.77efb1ef.png",
     "static/media/Wales.svg.png": "/FlagGame/static/media/Wales.svg.a7aa1c88.png",
     "static/media/Zimbabwe.svg.png": "/FlagGame/static/media/Zimbabwe.svg.c4f006b9.png",
     "static/media/avatar.jpg": "/FlagGame/static/media/avatar.41291536.jpg",
@@ -79,8 +80,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.db43d3fe.js",
-    "static/js/2.b96e64f7.chunk.js",
+    "static/js/2.19e63d5b.chunk.js",
     "static/css/main.4c5415f5.chunk.css",
-    "static/js/main.e7b53016.chunk.js"
+    "static/js/main.c201d9fa.chunk.js"
   ]
 }

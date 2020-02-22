@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc63e5d7d2455973f4f0f83b4cea05c2",
+    "revision": "67f0ece93b4c683368ea04b3fc90fd2a",
     "url": "/FlagGame/index.html"
   },
   {
-    "revision": "275c0eafd749cd21906b",
+    "revision": "2837a3900581a6b29bf4",
     "url": "/FlagGame/static/css/main.4c5415f5.chunk.css"
   },
   {
-    "revision": "0d37875cb1ff0b2ae860",
-    "url": "/FlagGame/static/js/2.b96e64f7.chunk.js"
+    "revision": "b6d2a7233e3f67d270dc",
+    "url": "/FlagGame/static/js/2.19e63d5b.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/FlagGame/static/js/2.b96e64f7.chunk.js.LICENSE.txt"
+    "url": "/FlagGame/static/js/2.19e63d5b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "275c0eafd749cd21906b",
-    "url": "/FlagGame/static/js/main.e7b53016.chunk.js"
+    "revision": "2837a3900581a6b29bf4",
+    "url": "/FlagGame/static/js/main.c201d9fa.chunk.js"
   },
   {
     "revision": "639feb3f60819f3a184d",
@@ -218,6 +218,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ae95f9318e6ded5570d0550fff4993d2",
     "url": "/FlagGame/static/media/Vatican.svg.ae95f931.png"
+  },
+  {
+    "revision": "77efb1efee2bf4db632a15e3f985dbb7",
+    "url": "/FlagGame/static/media/Venezuela.svg.77efb1ef.png"
   },
   {
     "revision": "a7aa1c88fbadab1c2c629fc67e396d2a",
