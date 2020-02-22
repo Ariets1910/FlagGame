@@ -36,7 +36,7 @@ const App = (props) => {
                     <Route path="/Profile" render={() =>
                         <PostField posts={props.state.posts} addPost={props.addPost} postFieldStartValue={props.postFieldStartValue}
                                    updateText={props.updateText}
-                        />}/>=
+                        />}/>
                     <Route path="/Dialogs"
                            render={() => <Dialogs users={props.state.users}
                                                   messages={props.state.messages}
