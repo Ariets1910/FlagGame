@@ -78,6 +78,7 @@ import india from "../../../images/flags/India.svg.png"
 import myanmar from "../../../images/flags/Myanmar.png"
 import luxembourg from "../../../images/flags/Luxembourg.svg.png"
 import singapur from "../../../images/flags/Singapore.svg.png"
+import venezuela from "../../../images/flags/Venezuela.svg.png"
 
 
 
@@ -88,7 +89,7 @@ let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
     madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
     argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
     vanuatu, pakistan, peru, niger, irland, indonesia, australia, azerbajdzan, albania, belgium, benin,
-    estonia, zimbabwe, india, myanmar, luxembourg, singapur];
+    venezuela, estonia, zimbabwe, india, myanmar, luxembourg, singapur];
 
 let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
     "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
