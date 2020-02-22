@@ -1,6 +1,6 @@
 .game {
     display: grid;
-    grid-template-columns: minmax(200px, 800px);
+    grid-template-columns: 1fr;
     /*grid-template-rows: minmax(400px, 800px);*/
     background: darkslategrey;
     width: 1fr;
