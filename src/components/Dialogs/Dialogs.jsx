@@ -3,7 +3,7 @@ import classes from "./Dialogs.module.css"
 import MessageN from "./Message/MessageN";
 import UserN from "./UserN/UserN";
 import AddNewMessage from "./AddNewMessage/AddNewMessage";
-debugger
+
 const Dialogs = (props) => {
 
     let userComponents = props.users.map((user) => <UserN name={user.name} id={user.id} path={user.path}/>);

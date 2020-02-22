@@ -8,6 +8,8 @@ import Sveta from "../images/sveta.jpg"
 import {rerenderEntireTree} from "../render";
 
 let state = {
+    player1StartScore: 0,
+    player2StartScore: 0,
     users: [
         {id: 1, path: Natalia, name: "Natalia"},
         {id: 2, path: Genias, name: "Natalia"},
@@ -75,6 +77,39 @@ export let updateMessage = (newMessage) => {
     state.messageFieldStartValue = newMessage;
     rerenderEntireTree(state);
 };
+
+export let changeFlag = () => {
+    rerenderEntireTree(state);
+};
+
+export let increaseScoreForFirstPlayer = () => {
+    state.player1StartScore++;
+    rerenderEntireTree(state);
+};
+
+
+export let increaseScoreForSecondPlayer = () => {
+    state.player2StartScore++;
+    rerenderEntireTree(state);
+};
+
+export let decreaseScoreForFirstPlayer = () => {
+    state.player1StartScore--;
+    rerenderEntireTree(state);
+};
+
+
+export let decreaseScoreForSecondPlayer = () => {
+    state.player2StartScore--;
+    rerenderEntireTree(state);
+};
+
+
+
+
+
+
+
 
 export default state
 

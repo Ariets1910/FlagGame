@@ -79,68 +79,65 @@ import myanmar from "../../../images/flags/Myanmar.png"
 import luxembourg from "../../../images/flags/Luxembourg.svg.png"
 import singapur from "../../../images/flags/Singapore.svg.png"
 import venezuela from "../../../images/flags/Venezuela.svg.png"
+import Player1 from "./Players/Player1";
+import Player2 from "./Players/Player2";
+import {decreaseScoreForFirstPlayer} from "../../../Redux/State";
 
 
-
-let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
-    china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
-    iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
-    mongolia, angola, belorus, cuba, vatican, greece, iran, libia, kazakhstan, ethiopia, greenland,
-    madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
-    argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
-    vanuatu, pakistan, peru, niger, irland, indonesia, australia, azerbajdzan, albania, belgium, benin,
-    venezuela, estonia, zimbabwe, india, myanmar, luxembourg, singapur];
-
-let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
-    "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
-    "Ісландія", "Єгипет", "Молдова", "Туніс", "Алжир", "Чилі", "ПАР", "Ємен", "Мароко", "Бразилія", "Румунія",
-    "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
-    "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
-    "Ніуе", "Ямайка", "Нова Каледонія", "Болівія", "Уганда", "Фіджі", "Угорщина", "Уельс", "Саба", "Руанда", "Вануату",
-    "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія", "Австралія", "Азербайжан", "Албанія", "Бельгія", "Бенін", "Венесуела"
-    , "Естонія", "Зімбабве", "Індія", "Мьянма", "Люксембург", "Сингапур"];
-
-
-let i = (Math.floor(Math.random() * list.length));
-
-// alert (list.length);
-// alert (list.indexOf("Ефіопія"));
-// alert (countries.length);
 const Game = (props) => {
+    let countries = [usa, russia, ukraine, england, germany, france, spain, italy,
+        china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
+        iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
+        mongolia, angola, belorus, cuba, vatican, greece, iran, libia, kazakhstan, ethiopia, greenland,
+        madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
+        argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
+        vanuatu, pakistan, peru, niger, irland, indonesia, australia, azerbajdzan, albania, belgium, benin,
+        venezuela, estonia, zimbabwe, india, myanmar, luxembourg, singapur];
+
+    let list = ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
+        "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
+        "Ісландія", "Єгипет", "Молдова", "Туніс", "Алжир", "Чилі", "ПАР", "Ємен", "Мароко", "Бразилія", "Румунія",
+        "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
+        "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
+        "Ніуе", "Ямайка", "Нова Каледонія", "Болівія", "Уганда", "Фіджі", "Угорщина", "Уельс", "Саба", "Руанда", "Вануату",
+        "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія", "Австралія", "Азербайжан", "Албанія", "Бельгія", "Бенін", "Венесуела"
+        , "Естонія", "Зімбабве", "Індія", "Мьянма", "Люксембург", "Сингапур"];
+
+    let i = (Math.floor(Math.random() * list.length));
+
+    const nextFlag = () => {
+        props.changeFlag()
+    };
     return (
+
         <div className={classes.game}>
+            <Player1 name="Player 1"
+                     decreaseScoreForFirstPlayer={props.decreaseScoreForFirstPlayer}
+                     increaseScoreForFirstPlayer={props.increaseScoreForFirstPlayer}
+                     player1StartScore={props.player1StartScore} />
             <div>
                 <h1>Яка це країна?</h1>
-                <div>
-                    <h3>
 
-                        Онови сторінку для наступного челенджу!!!
-                    </h3>
-                </div>
-
-            </div>
-            <div>
-                <div>
+                <h3>
+                    Клікни по прапору для наступного челенджу!!!
+                </h3>
+                <button className={classes.button} onClick={nextFlag}>
                     <img className={classes.img} src={countries[i]} alt="flag"/>
-                </div>
+                </button>
                 <div className={classes.textBelow}>
                     Наведи сюди мишку
                     <div>
-                        <img src={arrow} alt="pidkazka"/>
+                        <img className={classes.arrow} src={arrow} alt="pidkazka"/>
                     </div>
-
 
                     <h2>{list[i]}</h2>
 
                 </div>
             </div>
-            {/*<div className={classes.game.button}>*/}
-            {/*    <button>США</button>*/}
-            {/*    <button>Росія</button>*/}
-            {/*    <button>Україна</button>*/}
-            {/*    <button>Мальта</button>*/}
-            {/*</div>*/}
-
+            <Player2 name="Player 2"
+                     increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
+                     decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
+                     player2StartScore={props.player2StartScore}/>
         </div>
 
     )

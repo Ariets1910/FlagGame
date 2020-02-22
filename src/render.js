@@ -3,10 +3,23 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-import {addNewMessage, addPost, updateMessage, updateText} from "./Redux/State";
+import {
+    addNewMessage,
+    addPost,
+    changeFlag, decreaseScoreForFirstPlayer, decreaseScoreForSecondPlayer,
+    increaseScoreForFirstPlayer, increaseScoreForSecondPlayer,
+    updateMessage,
+    updateText
+} from "./Redux/State";
 
 export let rerenderEntireTree = (state) => {
     ReactDOM.render(<App state={state}
+                         changeFlag = {changeFlag}
+                         increaseScoreForFirstPlayer={increaseScoreForFirstPlayer}
+                         increaseScoreForSecondPlayer={increaseScoreForSecondPlayer}
+                         decreaseScoreForFirstPlayer={decreaseScoreForFirstPlayer}
+                         decreaseScoreForSecondPlayer={decreaseScoreForSecondPlayer}
+
                          addPost={addPost}
                          updateText={updateText}
                          addNewMessage={addNewMessage}
