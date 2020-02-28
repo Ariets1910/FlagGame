@@ -87,6 +87,8 @@ import irland from "../images/flags/Ireland.svg.png";
 
 
 let state = {
+    player1RoundScore: 0,
+    player2RoundScore: 0,
     player1StartScore: 0,
     player2StartScore: 0,
     dialogs: {
@@ -125,6 +127,8 @@ let state = {
     },
     content: {
         game: {
+            statement: "Яка це країна?",
+
             countries: [usa, russia, ukraine, england, germany, france, spain, italy,
                 china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
                 iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
@@ -196,9 +200,21 @@ window.state = state;
 // //     rerenderEntireTree(state);
 // // };
 
+
+
 export let increaseScoreForFirstPlayer = () => {
+    let alertMessage1 = "Виграв перший гравець!!"
     state.player1StartScore++;
     rerenderEntireTree(state);
+    if (state.player1StartScore === 10) {
+        state.player1RoundScore++
+        state.player1StartScore = 0
+        state.player2StartScore = 0
+       alert (alertMessage1)
+
+        rerenderEntireTree(state);
+    }
+
 
 };
 
@@ -206,6 +222,16 @@ export let increaseScoreForFirstPlayer = () => {
 export let increaseScoreForSecondPlayer = () => {
     state.player2StartScore++;
     rerenderEntireTree(state);
+    let alertMessage1 = "Виграв другий гравець!!";
+    if (state.player2StartScore === 10) {
+        state.player2RoundScore++
+        state.player1StartScore = 0
+        state.player2StartScore = 0
+        alert (alertMessage1)
+
+        rerenderEntireTree(state);
+    }
+
 };
 
 export let decreaseScoreForFirstPlayer = () => {

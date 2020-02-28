@@ -39,6 +39,8 @@ const App = (props) => {
                         increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
                         player1StartScore={props.state.player1StartScore}
                         player2StartScore={props.state.player2StartScore}
+                        player1RoundScore={props.state.player1RoundScore}
+                        player2RoundScore={props.state.player2RoundScore}
                         decreaseScoreForFirstPlayer={props.decreaseScoreForFirstPlayer}
                         decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
                         // changeFlag={props.changeFlag}

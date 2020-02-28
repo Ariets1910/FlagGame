@@ -62,7 +62,7 @@ button:focus {
     box-shadow: 0 14px 28px rgba(0,0,0,0.35), 0 10px 10px rgba(0,0,0,0.32);
 }
 .players {
-    background-color: white;
+
     height: auto;
     font-size: 40px;
     /*margin-left: 200px;*/

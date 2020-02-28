@@ -16,6 +16,9 @@ const Player2 = (props) => {
     return (
 
         <div className={classes.players}>
+            <div className={classes.round}>
+                {props.player2RoundScore}
+            </div>
             {props.name}
 
             <div>

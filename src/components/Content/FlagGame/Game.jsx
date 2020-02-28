@@ -44,11 +44,15 @@ const Game = (props) => {
 
 
         <div className={classes.game}>
+
             <div className={classes.players}>
+
                 <Player1 name="Player 1"
                          decreaseScoreForFirstPlayer={props.decreaseScoreForFirstPlayer}
                          increaseScoreForFirstPlayer={props.increaseScoreForFirstPlayer}
-                         player1StartScore={props.player1StartScore} />
+                         player1StartScore={props.player1StartScore}
+                         player1RoundScore={props.player1RoundScore}
+                />
             </div>
             <div className={classes.flagField}>
                 <h1 className={classes.countDown}>
@@ -62,7 +66,9 @@ const Game = (props) => {
                     />
 
                 </h1>
-                <h1>Яка це країна?</h1>
+                <h1>
+                    {props.game.statement}
+                </h1>
                 <h3>
                     Клікни по прапору для наступного челенджу!!!
                 </h3>
@@ -82,7 +88,9 @@ const Game = (props) => {
                 <Player2 name="Player 2"
                          increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
                          decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
-                         player2StartScore={props.player2StartScore}/>
+                         player2StartScore={props.player2StartScore}
+                         player2RoundScore={props.player2RoundScore}
+                />
             </div>
 
         </div>
