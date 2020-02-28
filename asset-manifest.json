@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/FlagGame/static/css/main.3e7038b3.chunk.css",
-    "main.js": "/FlagGame/static/js/main.57fc3e9c.chunk.js",
-    "main.js.map": "/FlagGame/static/js/main.57fc3e9c.chunk.js.map",
+    "main.css": "/FlagGame/static/css/main.4e2b531c.chunk.css",
+    "main.js": "/FlagGame/static/js/main.80d6a23d.chunk.js",
+    "main.js.map": "/FlagGame/static/js/main.80d6a23d.chunk.js.map",
     "runtime-main.js": "/FlagGame/static/js/runtime-main.db43d3fe.js",
     "runtime-main.js.map": "/FlagGame/static/js/runtime-main.db43d3fe.js.map",
     "static/js/2.eb61431f.chunk.js": "/FlagGame/static/js/2.eb61431f.chunk.js",
     "static/js/2.eb61431f.chunk.js.map": "/FlagGame/static/js/2.eb61431f.chunk.js.map",
     "index.html": "/FlagGame/index.html",
-    "precache-manifest.c7c077df20ef285a56ace63fba3603ea.js": "/FlagGame/precache-manifest.c7c077df20ef285a56ace63fba3603ea.js",
+    "precache-manifest.33762f5e3e754fe835ef57c5725a214a.js": "/FlagGame/precache-manifest.33762f5e3e754fe835ef57c5725a214a.js",
     "service-worker.js": "/FlagGame/service-worker.js",
-    "static/css/main.3e7038b3.chunk.css.map": "/FlagGame/static/css/main.3e7038b3.chunk.css.map",
+    "static/css/main.4e2b531c.chunk.css.map": "/FlagGame/static/css/main.4e2b531c.chunk.css.map",
     "static/js/2.eb61431f.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.eb61431f.chunk.js.LICENSE.txt",
     "static/media/Albania.svg.png": "/FlagGame/static/media/Albania.svg.74401241.png",
     "static/media/Algeria.svg": "/FlagGame/static/media/Algeria.daeb5108.svg",
@@ -80,7 +80,7 @@
   "entrypoints": [
     "static/js/runtime-main.db43d3fe.js",
     "static/js/2.eb61431f.chunk.js",
-    "static/css/main.3e7038b3.chunk.css",
-    "static/js/main.57fc3e9c.chunk.js"
+    "static/css/main.4e2b531c.chunk.css",
+    "static/js/main.80d6a23d.chunk.js"
   ]
 }
