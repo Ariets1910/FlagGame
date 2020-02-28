@@ -12,23 +12,23 @@ const Player1 = (props) => {
     let decreaseScoreByOne = () => {
         props.decreaseScoreForFirstPlayer()
     };
-    debugger
+
     return (
 
 
         <div className={classes.players}>
 
-            <div className={classes.round}>
-               {props.player1RoundScore}
-            </div>
-            <div>
+
+            <div className={classes.player1}>
                 {props.name}
             </div>
-
+            <div className={classes.round}>
+                {props.player1RoundScore}
+            </div>
 
             <div>
 
-                    <input type="text" ref={newScoreElement} value={props.player1StartScore}/>
+                    <input type="text" ref={newScoreElement} value={props.player1StartScore} width="20px"/>
                     <div>
                         <button onClick={increaseScoreByOne}>Plus</button>
                         <button onClick={decreaseScoreByOne}>Minus</button>

@@ -6,13 +6,13 @@
     height: auto;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    /*justify-content: center;*/
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 }
 .game img {
-    width: 640px;
-    height: 480px;
+    width: 800px;
+    height: 600px;
 
 }
 
@@ -67,17 +67,20 @@ button:focus {
     font-size: 40px;
     /*margin-left: 200px;*/
     /*margin-right: 200px;*/
-    background-color: dimgrey;
+
     box-shadow: 0 14px 28px rgba(0,0,0,0.35), 0 10px 10px rgba(0,0,0,0.32);
 }
 .players button {
-    font-size: 24px;
+    font-size:48px;
+    width: 170px;
 }
 .players button:hover {
     background-color: gold;
 }
 .players input {
-    font-size: 24px;
+    font-size: 48px;
+    text-align: center;
+    width: 170px;
 }
 
 

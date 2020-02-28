@@ -1,9 +1,15 @@
-.players {
-    display: grid;
-    grid-template-columns: 1fr;
 
-}
 .players .round {
     color: red;
+    font-size: 48px;
+}
+.players .player1 {
+    color: darkblue;
+    font-weight: bold;
+    font-size: 48px;
+}
+.players .player2 {
+    color: darkblue;
+    font-weight: bold;
     font-size: 48px;
 }

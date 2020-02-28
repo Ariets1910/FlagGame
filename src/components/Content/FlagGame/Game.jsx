@@ -53,7 +53,17 @@ const Game = (props) => {
                          player1StartScore={props.player1StartScore}
                          player1RoundScore={props.player1RoundScore}
                 />
+                <Player2 name="Player 2"
+                         increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
+                         decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
+                         player2StartScore={props.player2StartScore}
+                         player2RoundScore={props.player2RoundScore}
+                />
             </div>
+
+            {/*<div className={classes.players}>*/}
+            {/*   */}
+            {/*</div>*/}
             <div className={classes.flagField}>
                 <h1 className={classes.countDown}>
                     <Countdown
@@ -84,14 +94,7 @@ const Game = (props) => {
 
                 </div>
             </div>
-            <div className={classes.players}>
-                <Player2 name="Player 2"
-                         increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
-                         decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
-                         player2StartScore={props.player2StartScore}
-                         player2RoundScore={props.player2RoundScore}
-                />
-            </div>
+
 
         </div>
 

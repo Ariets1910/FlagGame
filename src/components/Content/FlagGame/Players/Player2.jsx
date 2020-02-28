@@ -16,10 +16,13 @@ const Player2 = (props) => {
     return (
 
         <div className={classes.players}>
+
+            <div className={classes.player2}>
+                {props.name}
+            </div>
             <div className={classes.round}>
                 {props.player2RoundScore}
             </div>
-            {props.name}
 
             <div>
                 <input type="text" ref={newScoreElement} value={props.player2StartScore}/>
