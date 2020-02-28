@@ -6,12 +6,13 @@ import AddNewMessage from "./AddNewMessage/AddNewMessage";
 
 const Dialogs = (props) => {
 
+
     let userComponents = props.users.map((user) => <UserN name={user.name} id={user.id} path={user.path}/>);
     let messageComponents = props.messages.map((message) => <MessageN message={message.message} />);
 
 
-
     return (
+
         <div className={classes.dialogs}>
             <div className={classes.users}>
                 {userComponents}

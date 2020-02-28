@@ -17,9 +17,19 @@ const Player1 = (props) => {
 
         <div className={classes.players}>
             {props.name}
-            <input type="text" ref={newScoreElement} value={props.player1StartScore}/>
-            <button onClick={increaseScoreByOne}>Plus</button>
-            <button onClick={decreaseScoreByOne}>Minus</button>
+
+            <div>
+
+                    <input type="text" ref={newScoreElement} value={props.player1StartScore}/>
+                    <div>
+                        <button onClick={increaseScoreByOne}>Plus</button>
+                        <button onClick={decreaseScoreByOne}>Minus</button>
+                    </div>
+
+
+
+            </div>
+
         </div>
 
     )

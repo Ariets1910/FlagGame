@@ -3,16 +3,20 @@ import classes from "../AddPost/AddPost.module.css"
 
 
 const AddPost = (props) => {
+
     let newPostElement = React.createRef();
 
     let addPost = () => {
         let text = newPostElement.current.value;
         props.addPost(text);
         newPostElement.current.value = '';
+        let clearText2 = newPostElement.current.value;
+        props.uptateText(clearText2)
     };
+
     let updateText = () => {
-        let text = newPostElement.current.value;
-        props.uptateText(text)
+        let clearText2 = newPostElement.current.value;
+        props.uptateText(clearText2)
 
     };
 

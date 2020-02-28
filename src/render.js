@@ -4,26 +4,24 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {
-    addNewMessage,
-    addPost,
-    changeFlag, decreaseScoreForFirstPlayer, decreaseScoreForSecondPlayer,
+
+
+
+    decreaseScoreForFirstPlayer, decreaseScoreForSecondPlayer,
     increaseScoreForFirstPlayer, increaseScoreForSecondPlayer,
-    updateMessage,
-    updateText
+
+
 } from "./Redux/State";
 
 export let rerenderEntireTree = (state) => {
+
     ReactDOM.render(<App state={state}
-                         changeFlag = {changeFlag}
                          increaseScoreForFirstPlayer={increaseScoreForFirstPlayer}
                          increaseScoreForSecondPlayer={increaseScoreForSecondPlayer}
                          decreaseScoreForFirstPlayer={decreaseScoreForFirstPlayer}
                          decreaseScoreForSecondPlayer={decreaseScoreForSecondPlayer}
 
-                         addPost={addPost}
-                         updateText={updateText}
-                         addNewMessage={addNewMessage}
-                         updateMessage={updateMessage}/>, document.getElementById('root'));
+    />, document.getElementById('root'));
 };
 
 

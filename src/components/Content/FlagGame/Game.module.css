@@ -1,7 +1,6 @@
 .game {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    /*grid-template-rows: minmax(400px, 800px);*/
+    grid-template-columns: 2fr 10fr 2fr;
     background: darkslategrey;
     width: 1fr;
     height: auto;
@@ -12,8 +11,8 @@
 
 }
 .game img {
-    width: 800px;
-    height: 600px;
+    width: 640px;
+    height: 480px;
 
 }
 
@@ -22,7 +21,7 @@
     color: darkslategrey;
     margin: 0;
     padding: 0;
-   padding-bottom: 20px;
+    padding-bottom: 20px;
     align-self: start;
 
 }
@@ -40,9 +39,9 @@
 }
 
 .textBelow img {
-     width: 48px;
+    width: 48px;
 
- }
+}
 
 .textBelow {
     font-size: 24px;
@@ -64,10 +63,29 @@ button:focus {
 }
 .players {
     background-color: white;
-    height: 200px;
+    height: auto;
+    font-size: 40px;
+    /*margin-left: 200px;*/
+    /*margin-right: 200px;*/
+    background-color: dimgrey;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.35), 0 10px 10px rgba(0,0,0,0.32);
 }
+.players button {
+    font-size: 24px;
+}
+.players button:hover {
+    background-color: gold;
+}
+.players input {
+    font-size: 24px;
+}
+
 
 .textBelow div img {
     height: auto;
+}
+
+.game .flagField .countDown {
+    color: white;
 }
 

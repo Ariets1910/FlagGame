@@ -2,7 +2,7 @@ import React from 'react';
 import classes from "./Players.module.css"
 
 
-const Players = (props) => {
+const Player2 = (props) => {
 
     let newScoreElement = React.createRef();
 
@@ -12,14 +12,21 @@ const Players = (props) => {
     let decreaseScoreByOne = () => {
         props.decreaseScoreForSecondPlayer()
     };
-    debugger
+
     return (
 
         <div className={classes.players}>
             {props.name}
-            <input type="text" ref={newScoreElement} value={props.player2StartScore}/>
-            <button onClick={increaseScoreByOne}>Plus</button>
-            <button onClick={decreaseScoreByOne}>Minus</button>
+
+            <div>
+                <input type="text" ref={newScoreElement} value={props.player2StartScore}/>
+                <div>
+                    <button onClick={increaseScoreByOne}>Plus</button>
+                    <button onClick={decreaseScoreByOne}>Minus</button>
+                </div>
+
+            </div>
+
         </div>
 
     )
@@ -27,4 +34,4 @@ const Players = (props) => {
 
 };
 
-export default Players
+export default Player2
