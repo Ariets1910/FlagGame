@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b458440056704bffd64f1f62efe99301",
+    "revision": "778796b7d0c81fcfeda453f6d618a6d1",
     "url": "/FlagGame/index.html"
   },
   {
-    "revision": "f08c5bb2c1d81cf5fde6",
-    "url": "/FlagGame/static/css/main.4e2b531c.chunk.css"
+    "revision": "c901e988d49ac1f782b8",
+    "url": "/FlagGame/static/css/main.fe909231.chunk.css"
   },
   {
-    "revision": "cc3764696359e7098bc9",
-    "url": "/FlagGame/static/js/2.eb61431f.chunk.js"
+    "revision": "2ebf4807938ab5dab7eb",
+    "url": "/FlagGame/static/js/2.b26c012e.chunk.js"
   },
   {
     "revision": "928d7b5eb39d16fe9a880722c974b51e",
-    "url": "/FlagGame/static/js/2.eb61431f.chunk.js.LICENSE.txt"
+    "url": "/FlagGame/static/js/2.b26c012e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f08c5bb2c1d81cf5fde6",
-    "url": "/FlagGame/static/js/main.80d6a23d.chunk.js"
+    "revision": "c901e988d49ac1f782b8",
+    "url": "/FlagGame/static/js/main.54ea1fc7.chunk.js"
   },
   {
     "revision": "639feb3f60819f3a184d",
