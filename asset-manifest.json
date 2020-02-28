@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FlagGame/static/css/main.8a1c3d54.chunk.css",
-    "main.js": "/FlagGame/static/js/main.0b5d62db.chunk.js",
-    "main.js.map": "/FlagGame/static/js/main.0b5d62db.chunk.js.map",
+    "main.css": "/FlagGame/static/css/main.3e7038b3.chunk.css",
+    "main.js": "/FlagGame/static/js/main.57fc3e9c.chunk.js",
+    "main.js.map": "/FlagGame/static/js/main.57fc3e9c.chunk.js.map",
     "runtime-main.js": "/FlagGame/static/js/runtime-main.db43d3fe.js",
     "runtime-main.js.map": "/FlagGame/static/js/runtime-main.db43d3fe.js.map",
-    "static/js/2.75d97f4e.chunk.js": "/FlagGame/static/js/2.75d97f4e.chunk.js",
-    "static/js/2.75d97f4e.chunk.js.map": "/FlagGame/static/js/2.75d97f4e.chunk.js.map",
+    "static/js/2.eb61431f.chunk.js": "/FlagGame/static/js/2.eb61431f.chunk.js",
+    "static/js/2.eb61431f.chunk.js.map": "/FlagGame/static/js/2.eb61431f.chunk.js.map",
     "index.html": "/FlagGame/index.html",
-    "precache-manifest.43a857d52dc4180bc2668e05a7eac664.js": "/FlagGame/precache-manifest.43a857d52dc4180bc2668e05a7eac664.js",
+    "precache-manifest.c7c077df20ef285a56ace63fba3603ea.js": "/FlagGame/precache-manifest.c7c077df20ef285a56ace63fba3603ea.js",
     "service-worker.js": "/FlagGame/service-worker.js",
-    "static/css/main.8a1c3d54.chunk.css.map": "/FlagGame/static/css/main.8a1c3d54.chunk.css.map",
-    "static/js/2.75d97f4e.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.75d97f4e.chunk.js.LICENSE.txt",
+    "static/css/main.3e7038b3.chunk.css.map": "/FlagGame/static/css/main.3e7038b3.chunk.css.map",
+    "static/js/2.eb61431f.chunk.js.LICENSE.txt": "/FlagGame/static/js/2.eb61431f.chunk.js.LICENSE.txt",
     "static/media/Albania.svg.png": "/FlagGame/static/media/Albania.svg.74401241.png",
     "static/media/Algeria.svg": "/FlagGame/static/media/Algeria.daeb5108.svg",
     "static/media/Andriy.jpg": "/FlagGame/static/media/Andriy.3cf2384a.jpg",
@@ -65,7 +65,6 @@
     "static/media/Wales.svg.png": "/FlagGame/static/media/Wales.svg.a7aa1c88.png",
     "static/media/Zimbabwe.svg.png": "/FlagGame/static/media/Zimbabwe.svg.c4f006b9.png",
     "static/media/avatar.jpg": "/FlagGame/static/media/avatar.41291536.jpg",
-    "static/media/background3.jpg": "/FlagGame/static/media/background3.c6d1589b.jpg",
     "static/media/dollar-logo-png.jpg": "/FlagGame/static/media/dollar-logo-png.4764fd67.jpg",
     "static/media/friends-animated-logoe.gif": "/FlagGame/static/media/friends-animated-logoe.6b1994b5.gif",
     "static/media/koronavirus.jpg": "/FlagGame/static/media/koronavirus.f0476a92.jpg",
@@ -80,8 +79,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.db43d3fe.js",
-    "static/js/2.75d97f4e.chunk.js",
-    "static/css/main.8a1c3d54.chunk.css",
-    "static/js/main.0b5d62db.chunk.js"
+    "static/js/2.eb61431f.chunk.js",
+    "static/css/main.3e7038b3.chunk.css",
+    "static/js/main.57fc3e9c.chunk.js"
   ]
 }
