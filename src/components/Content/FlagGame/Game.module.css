@@ -1,6 +1,6 @@
 .game {
     display: grid;
-    grid-template-columns: 2fr 10fr 2fr;
+    grid-template-columns: 3fr 10fr;
     background: darkslategrey;
     width: 1fr;
     height: auto;
@@ -60,6 +60,9 @@ button:focus {
 }
 .button:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.35), 0 10px 10px rgba(0,0,0,0.32);
+}
+.game .players {
+  margin-left: 50px;
 }
 .players {
 
