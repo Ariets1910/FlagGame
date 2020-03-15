@@ -14,7 +14,7 @@ const Game = (props) => {
     let i = (Math.floor(Math.random() * props.game.list.length));
 
     let nextFlag = () => {
-        state.content.game.functions.changeFlag()
+        props.changeFlag()
 
     };
 
@@ -34,11 +34,7 @@ const Game = (props) => {
         }
     };
 
-    // let onComplete = (props) => {
-    //
-    //        rerenderGame()
-    //
-    // }
+
 
     return (
 
@@ -53,6 +49,10 @@ const Game = (props) => {
                          player1StartScore={props.player1StartScore}
                          player1RoundScore={props.player1RoundScore}
                 />
+                <div>
+                    
+                </div>
+
                 <Player2 name="Player 2"
                          increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
                          decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
@@ -72,7 +72,7 @@ const Game = (props) => {
                         precision={3}
 
                         renderer={renderer}
-                        // onComplete={onComplete}
+
                     />
 
                 </h1>

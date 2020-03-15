@@ -13,11 +13,13 @@ import MyFriends from "./components/Nav/MyFriends/MyFriends";
 
 import Game from "./components/Content/FlagGame/Game";
 import PostField from "./components/Content/ProfilePosts/PostField";
+import store from "./Redux/State";
 
 
 
 const App = (props) => {
 
+    debugger
 
     return (
         <HashRouter>
@@ -35,31 +37,32 @@ const App = (props) => {
 
                     <Route path="/FlagGame" render={() => <Game
                         game={props.state.content.game}
+                        changeFlag={props.changeFlag}
                         increaseScoreForFirstPlayer={props.increaseScoreForFirstPlayer}
-                        increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
-                        player1StartScore={props.state.player1StartScore}
-                        player2StartScore={props.state.player2StartScore}
-                        player1RoundScore={props.state.player1RoundScore}
-                        player2RoundScore={props.state.player2RoundScore}
                         decreaseScoreForFirstPlayer={props.decreaseScoreForFirstPlayer}
+                        increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
                         decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
-                        // changeFlag={props.changeFlag}
+                        player1RoundScore={props.player1RoundScore}
+                        player2RoundScore={props.player2RoundScore}
+                        player1StartScore={props.player1StartScore}
+                        player2StartScore={props.player2StartScore}
+
                     />}/>
                     <Route path="/Profile" render={() =>
-                        <PostField posts={props.state.content.posts}
-                                   addPost={props.state.content.addPost}
-                                   postFieldStartValue={props.state.content.postFieldStartValue}
-                                   updateText={props.state.content.updateText}
+                        <PostField
+                            postField={props.state.content.postField}
+                            addPost={props.addPost}
+                            updateText={props.updateText}
                         />}/>
                     <Route path="/Dialogs"
-                           render={() => <Dialogs users={props.state.dialogs.users}
-                                                  messages={props.state.dialogs.messages}
-                                                  messageFieldStartValue={props.state.dialogs.messageFieldStartValue}
-                                                  addNewMessage={props.state.dialogs.addNewMessage}
-                                                  updateMessage={props.state.dialogs.updateMessage}/>}/>
+                           render={() => <Dialogs
+                            dialogs={props.state.content.dialogs}
+                            addNewMessage={props.addNewMessage}
+                            updateMessage={props.updateText}
+                           />}/>
                     <Route path="/News" component={News}/>
                     <Route path="/Music" component={Music}/>
-                    <Route path="/MyFriends" render={() => <MyFriends myFriends={props.state.myFriends}/>}/>
+                    <Route path="/MyFriends" render={() => <MyFriends myFriends={props.state.content.myFriends}/>}/>
                     <Route path="/Settings" component={Settings}/>
 
                 </div>

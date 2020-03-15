@@ -6,7 +6,9 @@ import AddPost from "./AddPost/AddPost";
 
 const PostField = (props) => {
 
-    let postComponents = props.posts.map((post) => {
+    debugger
+
+    let postComponents = props.postField.posts.map((post) => {
         return < PostN message={post.message} likeCount={post.likeCount}/>
 
     });

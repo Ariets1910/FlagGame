@@ -7,8 +7,8 @@ import AddNewMessage from "./AddNewMessage/AddNewMessage";
 const Dialogs = (props) => {
 
 
-    let userComponents = props.users.map((user) => <UserN name={user.name} id={user.id} path={user.path}/>);
-    let messageComponents = props.messages.map((message) => <MessageN message={message.message} />);
+    let userComponents = props.dialogs.users.map((user) => <UserN name={user.name} id={user.id} path={user.path}/>);
+    let messageComponents = props.dialogs.messages.map((message) => <MessageN message={message.message} />);
 
 
     return (
