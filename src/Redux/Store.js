@@ -96,20 +96,34 @@ import montenegro from "../images/flags/Montenegro.svg.png";
 import panama from "../images/flags/Panama.svg.png";
 import uae from "../images/flags/United_Arab_Emirates.svg.png";
 import laos from "../images/flags/Laos.svg.png";
-import App from "../App";
+
+// main inports
+
 import React from "react";
+import gameReducer from "./gameReducer";
+import dialogsReducer from "./dialogsReducer";
+import postFieldReducer from "./postFieldReducer";
 
 
 let store = {
-    getState() {
-        return this._state;
-    },
     _callSubscriber() {
         alert("state is changed")
+    },
+    getState() {
+        return this._state;
     },
     subscribe(observer) {
         this._callSubscriber = observer;
     },
+
+    dispatch(action) {
+        this._state.content.game = gameReducer(this._state.content.game, action);
+        this._state.content.dialogs = dialogsReducer(this._state.content.dialogs, action);
+        this._state.content.postField = postFieldReducer(this._state.content.postField, action);
+        this._callSubscriber(this._state)
+
+    },
+
     _state: {
         content: {
             game: {
@@ -136,48 +150,7 @@ let store = {
                     "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія", "Австралія", "Азербайжан", "Албанія", "Бельгія", "Бенін", "Венесуела"
                     , "Естонія", "Зімбабве", "Індія", "Мьянма", "Люксембург", "Сингапур", "Арменія", "Грузія", "Кіпр",
                     "Катар", "Північна Македонія", "Туркменністан", "Чорногорія", "Панама", "ОАЕ", "Лаос"],
-                functions: {
 
-
-                    changeFlag() {
-                        debugger
-                        this._callSubscriber(this._state);
-                    },
-                    increaseScoreForFirstPlayer() {
-                        debugger
-                        let alertMessage1 = "Виграв перший гравець!!"
-                        this._state.content.game.player1StartScore++;
-                        this._callSubscriber(this._state);
-                        if (this._state.content.game.player1StartScore === 10) {
-                            this._state.content.game.player1RoundScore++;
-                            this._state.content.game.player1StartScore = 0;
-                            this._state.content.game.player2StartScore = 0;
-                            alert(alertMessage1);
-                            this._callSubscriber(this._state);
-                        }
-                    },
-                    increaseScoreForSecondPlayer () {
-                        this._state.content.game.player2StartScore++;
-                        this._callSubscriber(this._state);
-                        let alertMessage1 = "Виграв другий гравець!!";
-                        if (this._state.content.game.player2StartScore === 10) {
-                            this._state.content.game.player2RoundScore++;
-                            this._state.content.game.player1StartScore = 0;
-                            this._state.content.game.player2StartScore = 0;
-                            alert(alertMessage1);
-                            this._callSubscriber(this._state);
-                        }
-                    },
-                    decreaseScoreForFirstPlayer() {
-                        this._state.content.game.player1StartScore--;
-                        this._callSubscriber(this._state);
-                    },
-                    decreaseScoreForSecondPlayer() {
-                        this._state.content.game.player2StartScore--;
-                        this._callSubscriber(this._state);
-
-                    },
-                },
                 players: [
                     {id: 1, name: "Player 1", startScore: 0},
                     {id: 2, name: "Player 2", startScore: 0},
@@ -204,7 +177,6 @@ let store = {
                 ],
                 messageFieldStartValue: "Add some message",
                 addNewMessage(dialogsMessage) {
-                    debugger
                     let newDialogsMessage = {
                         id: this._state.content.dialogs.messages.length + 1,
                         message: dialogsMessage,
@@ -227,7 +199,7 @@ let store = {
                 ],
                 postFieldStartValue: "Add some text",
                 addPost(postMessage) {
-                    debugger
+
                     let newPost = {
                         id: this._state.content.postField.posts.length + 1,
                         message: postMessage,
@@ -250,175 +222,11 @@ let store = {
                 {id: 6, path: Roma, name: "Roma"},
                 {id: 7, path: Sveta, name: "Sveta"},
             ],
-            },
+        },
     },
 };
 
 let _callSubscriber = store._callSubscriber.bind(store);
-
-
-//
-// let rerenderEntireTree = () => {
-//     alert ("state is changed")
-// };
-
-// let state = {
-//     player1RoundScore: 0,
-//     player2RoundScore: 0,
-//     player1StartScore: 0,
-//     player2StartScore: 0,
-//     dialogs: {
-//         users: [
-//             {id: 1, path: Natalia, name: "Natalia"},
-//             {id: 2, path: Genias, name: "Natalia"},
-//             {id: 3, path: Igor, name: "Igor"},
-//             {id: 4, path: Andriy, name: "Andriy"},
-//             {id: 5, path: Michael, name: "Michael"},
-//             {id: 6, path: Roma, name: "Roma"},
-//             {id: 7, path: Sveta, name: "Sveta"},
-//         ],
-//         messages: [
-//             {id: 1, message: "Hi"},
-//             {id: 2, message: "Hi, hello"},
-//             {id: 3, message: "How is your day?"},
-//             {id: 4, message: "Fine, for sure"},
-//             {id: 5, message: "Nice to hear that!!!"},
-//             {id: 6, message: "I love react!!"},
-//         ],
-//         messageFieldStartValue: "Add some message",
-//         addNewMessage(dialogsMessage) {
-//             let newDialogsMessage = {
-//                 id: state.dialogs.messages.length + 1,
-//                 message: dialogsMessage,
-//
-//             };
-//             state.dialogs.messages.push(newDialogsMessage);
-//             rerenderEntireTree(state);
-//         },
-//         updateMessage(newMessage) {
-//             state.dialogs.messageFieldStartValue = newMessage;
-//             rerenderEntireTree(state);
-//         },
-//
-//     },
-//     content: {
-//         game: {
-//             statement: "Яка це країна?",
-//
-//             countries: [usa, russia, ukraine, england, germany, france, spain, italy,
-//                 china, southkorea, northkorea, portugal, finland, denmark, norway, sweden, switzerland,
-//                 iceland, egypt, moldova, tunisia, algeria, chile, southafrica, yemen, marocco, brazil, romania,
-//                 mongolia, angola, belorus, cuba, vatican, greece, iran, libia, kazakhstan, ethiopia, greenland,
-//                 madagascar, sudan, nepal, butan, syria, croatia, canada, palau, japan, mali,
-//                 argentyna, niue, jamajka, newcaledonia, bolivia, uganda, fiji, hungary, wales, saba, rwanda,
-//                 vanuatu, pakistan, peru, niger, irland, indonesia, australia, azerbajdzan, albania, belgium, benin,
-//                 venezuela, estonia, zimbabwe, india, myanmar, luxembourg, singapur, armenia, georgia,
-//                 cyprus, qatar, north_macedonia, turkmenistan, montenegro, panama, uae, laos],
-//             list: ["США", "Росія", "Україна", "Англія", "Німеччина", "Франція", "Іспанія", "Італія",
-//                 "Китай", "Південна Корея", "Північна Корея", "Португалія", "Фінляндія", "Данія", "Норвегія", "Швеція", "Швейцарія",
-//                 "Ісландія", "Єгипет", "Молдова", "Туніс", "Алжир", "Чилі", "ПАР", "Ємен", "Мароко", "Бразилія", "Румунія",
-//                 "Монголія", "Ангола", "Білорусь", "Куба", "Ватикан", "Греція", "Іран", "Лівія", "Казахстан", "Ефіопія", "Гренландія",
-//                 "Мадагаскар", "Судан", "Непал", "Бутан", "Сирія", "Хорватія", "Канада", "Палау", "Японія", "Малі", "Аргетина",
-//                 "Ніуе", "Ямайка", "Нова Каледонія", "Болівія", "Уганда", "Фіджі", "Угорщина", "Уельс", "Саба", "Руанда", "Вануату",
-//                 "Пакистан", "Перу", "Нігер", "Ірландія", "Індонезія", "Австралія", "Азербайжан", "Албанія", "Бельгія", "Бенін", "Венесуела"
-//                 , "Естонія", "Зімбабве", "Індія", "Мьянма", "Люксембург", "Сингапур", "Арменія", "Грузія", "Кіпр",
-//                 "Катар", "Північна Македонія", "Туркменністан", "Чорногорія", "Панама", "ОАЕ", "Лаос"],
-//             functions: {
-//
-//                 changeFlag: () => {
-//                     rerenderEntireTree(state);
-//                 },
-//
-//             },
-//             players: [
-//                 {id: 1, name: "Player 1", startScore: 0},
-//                 {id: 2, name: "Player 2", startScore: 0},
-//
-//             ],
-//
-//         },
-//         posts: [
-//             {id: 1, message: "Hello! This is my second project!!!", likeCount: "10"},
-//             {id: 2, message: "It is great!!!", likeCount: "-1"},
-//             {id: 3, message: "Thank you! Enjoy!", likeCount: "20"},
-//             {id: 4, message: "With pleasure", likeCount: "100"},
-//         ],
-//         postFieldStartValue: "Add some text",
-//         addPost(postMessage) {
-//             debugger
-//             let newPost = {
-//                 id: state.content.posts.length + 1,
-//                 message: postMessage,
-//                 likeCount: 0
-//             };
-//             state.content.posts.push(newPost);
-//             rerenderEntireTree(state);
-//         },
-//         updateText(newText) {
-//             state.content.postFieldStartValue = newText;
-//             rerenderEntireTree(state);
-//         },
-//     },
-//     myFriends: [
-//         {id: 1, path: Natalia, name: "Natalia"},
-//         {id: 2, path: Genias, name: "Genias"},
-//         {id: 3, path: Igor, name: "Igor"},
-//         {id: 4, path: Andriy, name: "Andriy"},
-//         {id: 5, path: Michael, name: "Michael"},
-//         {id: 6, path: Roma, name: "Roma"},
-//         {id: 7, path: Sveta, name: "Sveta"},
-//     ],
-//
-// };
-
-
-// export let increaseScoreForFirstPlayer = () => {
-//     let alertMessage1 = "Виграв перший гравець!!"
-//     this._state.player1StartScore++;
-//     rerenderEntireTree(this._state);
-//     if (this._state.player1StartScore === 10) {
-//         this._state.player1RoundScore++
-//         this._state.player1StartScore = 0
-//         this._state.player2StartScore = 0
-//         alert(alertMessage1)
-//
-//         rerenderEntireTree(this._state);
-//     }
-//
-//
-// };
-//
-//
-// export let increaseScoreForSecondPlayer = () => {
-//     this._state.player2StartScore++;
-//     rerenderEntireTree(this._state);
-//     let alertMessage1 = "Виграв другий гравець!!";
-//     if (this._state.player2StartScore === 10) {
-//         this._state.player2RoundScore++
-//         this._state.player1StartScore = 0
-//         this._state.player2StartScore = 0
-//         alert(alertMessage1)
-//
-//         rerenderEntireTree(this._state);
-//     }
-//
-// };
-//
-// export let decreaseScoreForFirstPlayer = () => {
-//     this._state.player1StartScore--;
-//     rerenderEntireTree(this._state);
-// };
-//
-//
-// export let decreaseScoreForSecondPlayer = () => {
-//     this._state.player2StartScore--;
-//     rerenderEntireTree(this._state);
-//
-// };
-//
-// export const subscribe = (observer) => {
-//     rerenderEntireTree = observer;
-// };
 
 
 window.store = store;

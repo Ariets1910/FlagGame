@@ -1,5 +1,7 @@
 import React from "react";
 import classes from "../AddPost/AddPost.module.css"
+import {addPostActionCreator, updatePostTextActionCreator} from "../../../../Redux/postFieldReducer";
+
 
 
 const AddPost = (props) => {
@@ -7,16 +9,17 @@ const AddPost = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
+
         let text = newPostElement.current.value;
-        props.addPost(text);
+        props.dispatch (addPostActionCreator(text));
         newPostElement.current.value = '';
-        let clearText2 = newPostElement.current.value;
-        props.uptateText(clearText2)
+        let text2 = newPostElement.current.value;
+        props.dispatch (updatePostTextActionCreator(text2))
     };
 
     let updateText = () => {
-        let clearText2 = newPostElement.current.value;
-        props.uptateText(clearText2)
+        let text2 = newPostElement.current.value;
+        props.dispatch (updatePostTextActionCreator(text2))
 
     };
 

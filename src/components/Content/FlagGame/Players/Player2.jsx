@@ -1,5 +1,7 @@
 import React from 'react';
 import classes from "./Players.module.css"
+import {decreaseScoreSecondPlayerActionCreator, increaseScoreSecondPlayerActionCreator} from "../../../../Redux/gameReducer";
+
 
 
 const Player2 = (props) => {
@@ -7,10 +9,10 @@ const Player2 = (props) => {
     let newScoreElement = React.createRef();
 
     let increaseScoreByOne = () => {
-        props.increaseScoreForSecondPlayer()
+        props.dispatch(increaseScoreSecondPlayerActionCreator())
     };
     let decreaseScoreByOne = () => {
-        props.decreaseScoreForSecondPlayer()
+        props.dispatch(decreaseScoreSecondPlayerActionCreator())
     };
 
     return (

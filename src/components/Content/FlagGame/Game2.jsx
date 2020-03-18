@@ -81,7 +81,7 @@ import singapur from "../../../images/flags/Singapore.svg.png"
 import venezuela from "../../../images/flags/Venezuela.svg.png"
 import Player1 from "./Players/Player1";
 import Player2 from "./Players/Player2";
-import {decreaseScoreForFirstPlayer} from "../../../Redux/State";
+import {decreaseScoreForFirstPlayer} from "../../../Redux/Store";
 
 
 const Game = (props) => {

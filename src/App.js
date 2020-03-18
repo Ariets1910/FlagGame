@@ -13,13 +13,11 @@ import MyFriends from "./components/Nav/MyFriends/MyFriends";
 
 import Game from "./components/Content/FlagGame/Game";
 import PostField from "./components/Content/ProfilePosts/PostField";
-import store from "./Redux/State";
-
+import store from "./Redux/Store";
 
 
 const App = (props) => {
 
-    debugger
 
     return (
         <HashRouter>
@@ -37,28 +35,21 @@ const App = (props) => {
 
                     <Route path="/FlagGame" render={() => <Game
                         game={props.state.content.game}
-                        changeFlag={props.changeFlag}
-                        increaseScoreForFirstPlayer={props.increaseScoreForFirstPlayer}
-                        decreaseScoreForFirstPlayer={props.decreaseScoreForFirstPlayer}
-                        increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
-                        decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
                         player1RoundScore={props.player1RoundScore}
                         player2RoundScore={props.player2RoundScore}
                         player1StartScore={props.player1StartScore}
                         player2StartScore={props.player2StartScore}
-
+                        dispatch={props.dispatch}
                     />}/>
                     <Route path="/Profile" render={() =>
                         <PostField
                             postField={props.state.content.postField}
-                            addPost={props.addPost}
-                            updateText={props.updateText}
+                            dispatch={props.dispatch}
                         />}/>
                     <Route path="/Dialogs"
                            render={() => <Dialogs
-                            dialogs={props.state.content.dialogs}
-                            addNewMessage={props.addNewMessage}
-                            updateMessage={props.updateText}
+                               dialogs={props.state.content.dialogs}
+                               dispatch={props.dispatch}
                            />}/>
                     <Route path="/News" component={News}/>
                     <Route path="/Music" component={Music}/>

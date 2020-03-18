@@ -4,7 +4,7 @@ import arrow from "../../../images/arrow-down-4-48.png"
 
 import Player1 from "./Players/Player1";
 import Player2 from "./Players/Player2";
-import state from "../../../Redux/State";
+import state, {nextFlagActionCreator} from "../../../Redux/gameReducer";
 import Countdown from "react-countdown-now";
 
 
@@ -14,8 +14,7 @@ const Game = (props) => {
     let i = (Math.floor(Math.random() * props.game.list.length));
 
     let nextFlag = () => {
-        props.changeFlag()
-
+        props.dispatch(nextFlagActionCreator())
     };
 
 
@@ -24,16 +23,15 @@ const Game = (props) => {
         if (completed) {
             return (
                 <div>
-                    <Completionist />
+                    <Completionist/>
                 </div>
 
-                )
+            )
 
         } else {
             return <span>{seconds}</span>;
         }
     };
-
 
 
     return (
@@ -44,18 +42,16 @@ const Game = (props) => {
             <div className={classes.players}>
 
                 <Player1 name="Player 1"
-                         decreaseScoreForFirstPlayer={props.decreaseScoreForFirstPlayer}
-                         increaseScoreForFirstPlayer={props.increaseScoreForFirstPlayer}
+                         dispatch={props.dispatch}
                          player1StartScore={props.player1StartScore}
                          player1RoundScore={props.player1RoundScore}
                 />
                 <div>
-                    
+
                 </div>
 
                 <Player2 name="Player 2"
-                         increaseScoreForSecondPlayer={props.increaseScoreForSecondPlayer}
-                         decreaseScoreForSecondPlayer={props.decreaseScoreForSecondPlayer}
+                         dispatch={props.dispatch}
                          player2StartScore={props.player2StartScore}
                          player2RoundScore={props.player2RoundScore}
                 />

@@ -6,7 +6,7 @@ import AddPost from "./AddPost/AddPost";
 
 const PostField = (props) => {
 
-    debugger
+
 
     let postComponents = props.postField.posts.map((post) => {
         return < PostN message={post.message} likeCount={post.likeCount}/>
@@ -14,7 +14,7 @@ const PostField = (props) => {
     });
     return (
         <div className={classes.postField}>
-            <AddPost addPost={props.addPost} postFieldStartValue={props.postFieldStartValue} uptateText={props.updateText}/>
+            <AddPost dispatch={props.dispatch} postFieldStartValue={props.postField.postFieldStartValue} dispatch={props.dispatch}/>
 
             <div>
                 {postComponents}
