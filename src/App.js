@@ -17,7 +17,7 @@ import PostField from "./components/Content/ProfilePosts/PostField";
 
 const App = (props) => {
 
-    debugger
+
 
     return (
         <HashRouter>
@@ -45,6 +45,7 @@ const App = (props) => {
                         <PostField
                             postField={props.state.postField}
                             dispatch={props.dispatch}
+                            store={props.store}
                         />}/>
                     <Route path="/Dialogs"
                            render={() => <Dialogs

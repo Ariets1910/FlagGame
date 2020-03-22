@@ -5,26 +5,6 @@ import UserN from "./UserN/UserN";
 import AddNewMessage from "./AddNewMessage/AddNewMessage";
 
 
-function sayHi (name) {
-        alert (`Hello, ${name}`)
-}
-
-function sayBye (message) {
-        alert (`Bye, ${message}`)
-}
-
-function BIGGY (f1, f2, finished ){
-    if (finished) {
-        sayBye ("friends")
-    }
-    else {
-        sayHi("Max")
-    }
-};
-
-BIGGY (sayHi, sayBye,)
-
-
 
 const Dialogs = (props) => {
 

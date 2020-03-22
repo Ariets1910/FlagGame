@@ -1,6 +1,6 @@
 import React from "react";
 import classes from "../AddPost/AddPost.module.css"
-import {addPostActionCreator, updatePostTextActionCreator} from "../../../../Redux/postFieldReducer";
+
 
 
 
@@ -8,18 +8,20 @@ const AddPost = (props) => {
 
     let newPostElement = React.createRef();
 
-    let addPost = () => {
+    let onAddPost = () => {
 
         let text = newPostElement.current.value;
-        props.dispatch (addPostActionCreator(text));
+        props.addPost(text);
+
         newPostElement.current.value = '';
-        let text2 = newPostElement.current.value;
-        props.dispatch (updatePostTextActionCreator(text2))
+        text = newPostElement.current.value;
+        props.updatePostText(text);
+
     };
 
-    let updateText = () => {
-        let text2 = newPostElement.current.value;
-        props.dispatch (updatePostTextActionCreator(text2))
+    let onUpdateText = () => {
+        let text = newPostElement.current.value;
+        props.updatePostText(text)
 
     };
 
@@ -27,10 +29,10 @@ const AddPost = (props) => {
         <div className={classes.addPost}>
             <form className={classes.form}>
                 <div className={classes.textarea}>
-                    <textarea name="" ref={newPostElement} cols="30" rows="10" value={props.postFieldStartValue} onChange={updateText}></textarea>
+                    <textarea name="" ref={newPostElement} cols="30" rows="10" value={props.postFieldStartValue} onChange={onUpdateText}></textarea>
                 </div>
                 <div className={classes.addButton}>
-                    <button id="addPost" onClick={addPost}>Додати пост</button>
+                    <button id="addPost" onClick={onAddPost}>Додати пост</button>
                 </div>
                 <div className={classes.clearButton}>
                     <button type="reset">Очистити</button>

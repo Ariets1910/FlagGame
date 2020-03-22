@@ -2,6 +2,7 @@ import React from 'react';
 import classes from "./PostField.module.css"
 import PostN from "./PostN/PostN";
 import AddPost from "./AddPost/AddPost";
+import AddPostContainer from "./AddPost/AddPost-Container";
 
 
 const PostField = (props) => {
@@ -14,7 +15,7 @@ const PostField = (props) => {
     });
     return (
         <div className={classes.postField}>
-            <AddPost dispatch={props.dispatch} postFieldStartValue={props.postField.postFieldStartValue} dispatch={props.dispatch}/>
+            <AddPostContainer store={props.store}/>}/>
 
             <div>
                 {postComponents}
