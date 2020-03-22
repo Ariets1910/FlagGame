@@ -2,15 +2,15 @@ import React from "react";
 import classes from "./Dialogs.module.css"
 import MessageN from "./Message/MessageN";
 import UserN from "./UserN/UserN";
-import AddNewMessage from "./AddNewMessage/AddNewMessage";
+import AddNewMessageContainer from "./AddNewMessage/AddNewMessage-Container";
 
 
 
 const Dialogs = (props) => {
 
 
-    let userComponents = props.dialogs.users.map((user) => <UserN name={user.name} id={user.id} path={user.path}/>);
-    let messageComponents = props.dialogs.messages.map((message) => <MessageN message={message.message} />);
+    let userComponents = props.store.getState().dialogs.users.map((user) => <UserN name={user.name} id={user.id} path={user.path}/>);
+    let messageComponents = props.store.getState().dialogs.messages.map((message) => <MessageN message={message.message} />);
 
 
     return (
@@ -23,9 +23,7 @@ const Dialogs = (props) => {
                 {messageComponents}
             </div>
             <div className={classes.addNewMessage}>
-                <AddNewMessage dispatch={props.dispatch}
-                               messageFieldStartValue={props.messageFieldStartValue}
-                               dispatch={props.dispatch}/>
+                <AddNewMessageContainer store={props.store}/>
             </div>
         </div>
 

@@ -1,32 +1,26 @@
 import React from "react";
-import classes from "./AddNewMessage.module.css"
+import AddNewMessage from "./AddNewMessage";
 import {addMessageActionCreator, newMessageTextActionCreator} from "../../../Redux/dialogsReducer";
-import Dialogs from "../Dialogs";
 
 
 
 const AddNewMessageContainer = (props) => {
 
-    let newMessageElement = React.createRef();
+    let state = props.store.getState();
 
-    let addMessage = () => {
-
-        let text = newMessageElement.current.value;
-        props.dispatch(addMessageActionCreator(text));
-        newMessageElement.current.value = '';
-        let text2 = newMessageElement.current.value;
-        props.dispatch(newMessageTextActionCreator(text2))
+    let onAddMessage = (text) => {
+        props.store.dispatch(addMessageActionCreator(text));
+        props.store.dispatch(newMessageTextActionCreator(text));
     };
 
-    let newMessageText = () => {
-        let text2 = newMessageElement.current.value;
-        props.dispatch(newMessageTextActionCreator(text2))
+    let onNewMessageText = (text) => {
+        props.store.dispatch(newMessageTextActionCreator(text));
 
     };
 
 
     return (
-    <Dialogs/>
+        <AddNewMessage onAddMessage={onAddMessage} onNewMessageText={onNewMessageText} messageFieldStartValue={state.dialogs.messageFieldStartValue}/>
     )
 
 };

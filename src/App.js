@@ -43,14 +43,12 @@ const App = (props) => {
                     />}/>
                     <Route path="/Profile" render={() =>
                         <PostField
-                            postField={props.state.postField}
-                            dispatch={props.dispatch}
                             store={props.store}
                         />}/>
                     <Route path="/Dialogs"
                            render={() => <Dialogs
-                               dialogs={props.state.dialogs}
-                               dispatch={props.dispatch}
+                               store={props.store}
+
                            />}/>
                     <Route path="/News" component={News}/>
                     <Route path="/Music" component={Music}/>

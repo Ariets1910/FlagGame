@@ -1,15 +1,15 @@
 import React from 'react';
 import classes from "./PostField.module.css"
 import PostN from "./PostN/PostN";
-import AddPost from "./AddPost/AddPost";
+
 import AddPostContainer from "./AddPost/AddPost-Container";
 
 
 const PostField = (props) => {
 
+debugger
 
-
-    let postComponents = props.postField.posts.map((post) => {
+    let postComponents = props.store.getState().postField.posts.map((post) => {
         return < PostN message={post.message} likeCount={post.likeCount}/>
 
     });

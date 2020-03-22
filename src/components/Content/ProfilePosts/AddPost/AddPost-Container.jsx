@@ -9,7 +9,7 @@ const AddPostContainer = (props) => {
 
 
 
-    let state = props.store.getState()
+    let state = props.store.getState();
 
 
 
