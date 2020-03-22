@@ -1,5 +1,5 @@
 
-import store from "./Redux/Store";
+import store from "./Redux/redux.store";
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -8,25 +8,19 @@ import App from './App';
 
 export let rerenderEntireTree = (state) => {
 
-    ReactDOM.render(<App state={store.getState()}
+    ReactDOM.render(<App state={state}
                          dispatch={store.dispatch.bind(store)}
-                         player1RoundScore={store._state.content.game.player1RoundScore}
-                         player2RoundScore={store._state.content.game.player2RoundScore}
-                         player1StartScore={store._state.content.game.player1StartScore}
-                         player2StartScore={store._state.content.game.player2StartScore}
-
-
-
-
-
-
 
     />, document.getElementById('root'));
 };
 
-rerenderEntireTree(store.state);
+rerenderEntireTree(store.getState());
 
-store.subscribe (rerenderEntireTree);
+store.subscribe (() => {
+    let state = store.getState();
+    rerenderEntireTree (state)
+});
+
 
 
 

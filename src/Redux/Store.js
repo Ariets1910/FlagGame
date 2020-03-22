@@ -176,18 +176,7 @@ let store = {
                     {id: 6, message: "I love react!!"},
                 ],
                 messageFieldStartValue: "Add some message",
-                addNewMessage(dialogsMessage) {
-                    let newDialogsMessage = {
-                        id: this._state.content.dialogs.messages.length + 1,
-                        message: dialogsMessage,
-                    };
-                    this._state.content.dialogs.messages.push(newDialogsMessage);
-                    this._callSubscriber(this._state);
-                },
-                updateMessage(newMessage) {
-                    this._state.content.dialogs.messageFieldStartValue = newMessage;
-                    this._callSubscriber(this._state);
-                },
+
 
             },
             postField: {
@@ -198,20 +187,7 @@ let store = {
                     {id: 4, message: "With pleasure", likeCount: "100"},
                 ],
                 postFieldStartValue: "Add some text",
-                addPost(postMessage) {
 
-                    let newPost = {
-                        id: this._state.content.postField.posts.length + 1,
-                        message: postMessage,
-                        likeCount: 0
-                    };
-                    this._state.content.postField.posts.push(newPost);
-                    this._callSubscriber(this._state);
-                },
-                updateText(newText) {
-                    this._state.content.postField.postFieldStartValue = newText;
-                    this._callSubscriber(this._state);
-                },
             },
             myFriends: [
                 {id: 1, path: Natalia, name: "Natalia"},

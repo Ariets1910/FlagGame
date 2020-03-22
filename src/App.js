@@ -10,14 +10,14 @@ import News from "./components/News/News";
 import Settings from "./components/Settings/Settings";
 import Music from "./components/Music/Music";
 import MyFriends from "./components/Nav/MyFriends/MyFriends";
-
 import Game from "./components/Content/FlagGame/Game";
 import PostField from "./components/Content/ProfilePosts/PostField";
-import store from "./Redux/Store";
+
 
 
 const App = (props) => {
 
+    debugger
 
     return (
         <HashRouter>
@@ -34,26 +34,26 @@ const App = (props) => {
                 <div className="content">
 
                     <Route path="/FlagGame" render={() => <Game
-                        game={props.state.content.game}
-                        player1RoundScore={props.player1RoundScore}
-                        player2RoundScore={props.player2RoundScore}
-                        player1StartScore={props.player1StartScore}
-                        player2StartScore={props.player2StartScore}
+                        game={props.state.game}
+                        player1RoundScore={props.state.game.player1RoundScore}
+                        player2RoundScore={props.state.game.player2RoundScore}
+                        player1StartScore={props.state.game.player1StartScore}
+                        player2StartScore={props.state.game.player2StartScore}
                         dispatch={props.dispatch}
                     />}/>
                     <Route path="/Profile" render={() =>
                         <PostField
-                            postField={props.state.content.postField}
+                            postField={props.state.postField}
                             dispatch={props.dispatch}
                         />}/>
                     <Route path="/Dialogs"
                            render={() => <Dialogs
-                               dialogs={props.state.content.dialogs}
+                               dialogs={props.state.dialogs}
                                dispatch={props.dispatch}
                            />}/>
                     <Route path="/News" component={News}/>
                     <Route path="/Music" component={Music}/>
-                    <Route path="/MyFriends" render={() => <MyFriends myFriends={props.state.content.myFriends}/>}/>
+                    <Route path="/MyFriends" render={() => <MyFriends myFriends={props.state.myFriends}/>}/>
                     <Route path="/Settings" component={Settings}/>
 
                 </div>

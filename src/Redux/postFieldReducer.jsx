@@ -9,7 +9,18 @@ export const updatePostTextActionCreator = (clearText2) => {
     return {type: UPDATE_POST_TEXT, newText: clearText2}
 
 };
-const postFieldReducer = (state, action) => {
+
+let initialState = {
+    posts: [
+        {id: 1, message: "Hello! This is my second project!!!", likeCount: "10"},
+        {id: 2, message: "It is great!!!", likeCount: "-1"},
+        {id: 3, message: "Thank you! Enjoy!", likeCount: "20"},
+        {id: 4, message: "With pleasure", likeCount: "100"},
+    ],
+    postFieldStartValue: "Add some text",
+};
+
+const postFieldReducer = (state = initialState, action) => {
     if (action.type === ADD_POST) {
         let newPost = {
             id: state.posts.length + 1,
